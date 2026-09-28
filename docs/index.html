@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dungeon Crawler Carl</title>
+<meta name="description" content="Dungeon Crawler Carl — session recaps, floors and a cross-linked cast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#EDEFF2; --surface:#FFFFFF; --surface-2:#F5F7F9;
+    --ink:#191D23; --muted:#59636F; --line:#D6DBE1;
+    --amber:#A66A12; --amber-soft:#F0E2CA;
+    --teal:#1B6B67; --teal-soft:#D9EAE8;
+    --rust:#9C3B2E; --rust-soft:#F2DFDB;
+    --display:"Zilla Slab",Georgia,serif;
+    --body:"Source Sans 3",system-ui,-apple-system,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sp:clamp(16px,3vw,28px);
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#13161A; --surface:#1B1F25; --surface-2:#22272E;
+      --ink:#E4E8ED; --muted:#939DA9; --line:#2E353E;
+      --amber:#DFA244; --amber-soft:#3A2F1C;
+      --teal:#56B4AD; --teal-soft:#16302F;
+      --rust:#D4776A; --rust-soft:#3A221E;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#13161A; --surface:#1B1F25; --surface-2:#22272E;
+    --ink:#E4E8ED; --muted:#939DA9; --line:#2E353E;
+    --amber:#DFA244; --amber-soft:#3A2F1C;
+    --teal:#56B4AD; --teal-soft:#16302F;
+    --rust:#D4776A; --rust-soft:#3A221E;
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--body); font-size:16px; line-height:1.6;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  img{max-width:100%}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--display); text-wrap:balance; margin:0; font-weight:600}
+  code{font-family:var(--mono); font-size:.92em; background:var(--surface-2); padding:1px 5px; border-radius:3px}
+
+  .shell{display:grid; grid-template-columns:270px minmax(0,1fr)}
+  @media (max-width:820px){ .shell{grid-template-columns:minmax(0,1fr)} }
+
+  .rail{
+    border-right:1px solid var(--line); background:var(--surface);
+    padding:var(--sp) 0 48px; position:sticky; top:env(safe-area-inset-top,0px);
+    align-self:start; max-height:100vh; overflow-y:auto;
+  }
+  @media (max-width:820px){
+    .rail{position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line); padding-bottom:20px}
+  }
+  .brand{padding:0 20px 18px; border-bottom:1px solid var(--line); margin-bottom:14px}
+  .brand .ship{font-family:var(--display); font-size:21px; font-weight:700; line-height:1.15; letter-spacing:-.01em}
+  .brand .sub{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-top:7px}
+
+  .search{margin:0 20px 16px}
+  .search input{
+    width:100%; padding:8px 11px; border-radius:7px; font-family:var(--body); font-size:14px;
+    border:1px solid var(--line); background:var(--surface-2); color:var(--ink);
+  }
+  .search input:focus{outline:2px solid var(--amber); outline-offset:1px}
+
+  .grp{margin-bottom:16px}
+  .grp > .lbl{font-family:var(--mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); padding:0 20px; margin-bottom:5px}
+  .nav a{display:flex; align-items:baseline; gap:8px; justify-content:space-between; padding:5px 20px; text-decoration:none; font-size:14.5px; border-left:2px solid transparent}
+  .nav a:hover{background:var(--surface-2)}
+  .nav a[aria-current="page"]{border-left-color:var(--amber); background:var(--surface-2); font-weight:600}
+  .nav a:focus-visible{outline:2px solid var(--amber); outline-offset:-2px}
+  .nav a .n{font-family:var(--mono); font-size:10.5px; color:var(--muted)}
+
+  main{padding:var(--sp); padding-block:calc(var(--sp) + 6px) 90px; max-width:820px}
+  .crumb{font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px}
+  .ttl{font-size:clamp(28px,5vw,40px); line-height:1.08; letter-spacing:-.02em; margin-bottom:6px}
+  .dek{color:var(--muted); font-size:17px; margin-bottom:22px}
+
+  .badges{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px}
+  .tag{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; padding:3px 8px; border-radius:4px; background:var(--surface-2); color:var(--muted); border:1px solid var(--line)}
+  .tag.t-character{background:var(--teal-soft); color:var(--teal); border-color:transparent}
+  .tag.t-place{background:var(--amber-soft); color:var(--amber); border-color:transparent}
+  .tag.t-faction{background:var(--rust-soft); color:var(--rust); border-color:transparent}
+  .conf{display:inline-flex; align-items:center; gap:5px}
+  .dot{width:7px; height:7px; border-radius:50%; display:inline-block}
+  .dot.hi{background:var(--teal)} .dot.mid{background:var(--amber)} .dot.lo{background:var(--rust)}
+
+  .prose p{margin:0 0 15px}
+  .prose h2{font-size:15px; letter-spacing:.02em; margin:30px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line)}
+  .prose ul{margin:0 0 16px; padding-left:20px}
+  .prose li{margin-bottom:7px}
+  .prose em{color:var(--muted)}
+
+  a.wl{color:var(--teal); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--teal) 35%, transparent); padding-bottom:.5px}
+  a.wl:hover{border-bottom-color:var(--teal); background:var(--teal-soft)}
+  a.wl.missing{color:var(--rust); border-bottom-style:dotted; border-bottom-color:var(--rust)}
+
+  .panel{border:1px solid var(--line); border-radius:9px; background:var(--surface); padding:16px 18px; margin:0 0 18px}
+  .panel .ph{font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:9px}
+  .panel p{margin:0}
+  .panel.note{background:var(--surface-2)}
+  .panel.warn{border-left:3px solid var(--rust)}
+
+  .alias{display:inline-block; font-family:var(--mono); font-size:11.5px; padding:2px 7px; border-radius:4px; background:var(--surface-2); border:1px solid var(--line); margin:0 4px 4px 0; color:var(--muted)}
+
+  .backlinks{margin-top:34px; padding-top:16px; border-top:1px solid var(--line)}
+  .backlinks .ph{font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px}
+  .backlinks ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+  .backlinks li a{font-size:13.5px; text-decoration:none; padding:3px 9px; border-radius:5px; background:var(--surface-2); border:1px solid var(--line)}
+  .backlinks li a:hover{border-color:var(--teal); color:var(--teal)}
+
+  .thread{border-left:2px solid var(--line); padding:0 0 2px 15px; margin-bottom:20px}
+  .thread.open{border-left-color:var(--amber)}
+  .thread.hot{border-left-color:var(--rust)}
+  .thread h3{font-size:16.5px; margin-bottom:3px}
+  .thread .st{font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:5px}
+  .thread p{margin:0; font-size:15px}
+
+  .beat{display:grid; grid-template-columns:70px minmax(0,1fr); gap:14px; margin-bottom:16px}
+  @media (max-width:520px){ .beat{grid-template-columns:minmax(0,1fr); gap:2px} }
+  .beat .t{font-family:var(--mono); font-size:11.5px; color:var(--muted); padding-top:4px}
+  .beat .b p{margin:2px 0 0; font-size:14.5px; color:var(--muted)}
+
+  .tag.t-floor{background:var(--amber-soft); color:var(--amber); border-color:transparent}
+  .tag.t-crawler,.tag.t-npc,.tag.t-rival{background:var(--teal-soft); color:var(--teal); border-color:transparent}
+  .tag.t-mob{background:var(--rust-soft); color:var(--rust); border-color:transparent}
+
+  .st-good,.st-bad,.st-warn{font-family:var(--mono); font-size:10px; letter-spacing:.06em;
+    text-transform:uppercase; padding:1px 6px; border-radius:3px; margin-left:6px; white-space:nowrap}
+  .st-good{background:var(--teal-soft); color:var(--teal)}
+  .st-bad{background:var(--rust-soft); color:var(--rust)}
+  .st-warn{background:var(--amber-soft); color:var(--amber)}
+
+  .axis-grp{margin:0 0 16px}
+  .axis-grp .ph{font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:5px}
+  .axis-grp ul{list-style:none; margin:0; padding:0}
+  .axis-grp li{margin-bottom:4px; font-size:15px}
+
+  .foot{margin-top:44px; padding-top:16px; border-top:1px solid var(--line); font-size:13px; color:var(--muted)}
+
+  .themebtn{
+    position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom,0px));
+    border:1px solid var(--line); background:var(--surface); color:var(--muted);
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase;
+    padding:7px 11px; border-radius:6px; cursor:pointer;
+  }
+  .themebtn:hover{color:var(--ink); border-color:var(--amber)}
+  @media (prefers-reduced-motion:no-preference){ .nav a,a.wl,.backlinks li a{transition:background .12s,color .12s,border-color .12s} }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">
+      <div class="ship">Dungeon Crawler Carl</div>
+      <div class="sub">Campaign Archive</div>
+    </div>
+    <div class="search"><input id="q" type="search" placeholder="Filter the index&hellip;" aria-label="Filter index"></div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+  <main id="main"></main>
+</div>
+<button class="themebtn" id="themebtn" type="button">Theme</button>
+
+<script>
+const PAGES  = [{"id": "session-00", "title": "Session 00", "group": "Sessions", "type": "doc", "typeLabel": "Session", "dek": "Noosa, 9pm. The world flattens. Two strangers go down the stairs.", "conf": "", "confLabel": "", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p><a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> was on the beach at Noosa with a beer and a sawn-off shotgun down his pants. <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> was there to clear his head about dropping out of university. Neither knew the other. At 9pm the world flattened.</p><h2>The Flattening</h2><p>A rush of dust came off the ruined boulevard and onto the sand. The couple who had been canoodling under a beach awning a minute earlier rolled onto the beach as a pair of bodiless legs. Then the text appeared in front of every surviving face, in a language nobody had learned but everybody could read: the planet had been seized under <a class=\"wl\" href=\"#the-syndicate\">The Syndicate</a>'s precious elemental reserves code, and <a class=\"wl\" href=\"#borant-corporation\">The Borant Corporation</a>, assigned regency, had chosen option three — <a class=\"wl\" href=\"#the-world-dungeon\">The World Dungeon</a>, eighteen levels deep.</p><h2>Two Strangers and a Light</h2><p>The pair met over a beer and a blueberry-ice vape, discovered a shared broken-family history and some shared politics, and set off down the beach towards the only light left standing. Hundreds of people were screaming in the dark. The light never seemed to get closer.</p><h2>The Stair Bully</h2><p>What they found at <a class=\"wl\" href=\"#the-stairwell\">The Stairwell</a> was <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> at the top of the steps with a nailed two-by-four, standing over bodies and a small cache of stolen goods, charging admission to the end of the world. He had just pulled the timber out of the back of a woman's skull — <a class=\"wl\" href=\"#cheryl\">Cheryl</a>, as it turned out — and he grabbed her cousin <a class=\"wl\" href=\"#michelle\">Michelle</a> as a hostage when the pair approached.</p><p><a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> threw a beer can at his head and tried to trade him a truck full of supplies. <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> called the party's first play — <a class=\"wl\" href=\"#call-a-play\">the Looky-loo</a> — and went round his blind side with a club. It went less cleanly than either intended: <a class=\"wl\" href=\"#michelle\">Michelle</a> grabbed at the shotgun in the scrum, the gun jammed at point-blank range, and with under a minute before the stairwell sealed the whole tangle went down the stairs in a heap.</p><p><a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> arrived at the bottom with his neck at an ungodly angle.</p><h2>Floor One</h2><p>Through an ornate set of doors worked with something demonic and aquatic, a booming voice welcomed the crawlers to <a class=\"wl\" href=\"#floor-01\">Floor 1</a>. Green lichen, endless junctions, and children's laughter coming from ahead and behind at once. Twice they glimpsed <a class=\"wl\" href=\"#the-white-dress-girls\">The Girls in White Dresses</a> standing in the middle distance, gone when looked at properly.</p><p><a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> spent half an hour patting the walls looking for a door. Then the rumbling started, and <a class=\"wl\" href=\"#the-wall-of-blood\">The Wall of Blood</a> came round the corner like a red avalanche. <a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> climbed the wall, hung off a brazier and held <a class=\"wl\" href=\"#michelle\">Michelle</a> over one shoulder. <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> tried to surf it and got slammed into a wall.</p><p>Drenched and coughing, they rounded the corner, found a door marked <em>Tutorial Guild</em>, and fell through it into <a class=\"wl\" href=\"#tutorial-guild\">The Tutorial Guild</a> — incense, yoga mats, body odour, and a bat-like creature unfolding from the ceiling to introduce herself as <a class=\"wl\" href=\"#mauritius\">Mauritius</a>.</p><p>Session ends there, on a short rest and a full heal.</p>", "backlinks": [], "search": "session 00 noosa, 9pm. the world flattens. two strangers go down the stairs."}, {"id": "pre-collapse", "title": "Pre-Collapse", "group": "Floors", "type": "floor", "typeLabel": "Floor", "dek": "Earth, before. Ordinary lives, about to stop being ordinary.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "Pre-Collapse", "axisLabel": "Floor", "aliases": [], "html": "<p>Everything before 9pm. For this party it is one Queensland beach town and two people with nothing much going on — a long-haul trucker passing through, and a burnt-out hospitality worker up for the weekend.</p><h2>On this floor</h2><div class=\"axis-grp\"><div class=\"ph\">Places</div><ul><li><a class=\"wl\" href=\"#noosa\">Noosa</a></li></ul></div>", "backlinks": [], "search": "pre-collapse earth, before. ordinary lives, about to stop being ordinary."}, {"id": "surface", "title": "The Surface", "group": "Floors", "type": "floor", "typeLabel": "Floor", "dek": "After the flattening, before the descent. Roughly one hour.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "Surface", "axisLabel": "Floor", "aliases": [], "html": "<p>The hour between the collapse and the stairwells sealing. Buildings gone, the interior of the world crushed, hundreds of injured and dead on the sand at Noosa, and a single ethereal light at the far end of the strip marking the way down.</p><p><a class=\"wl\" href=\"#borant-corporation\">The Borant Corporation</a>'s announcement gave everyone the same choice and the same deadline. Most people ran the other way, towards homes and families that no longer existed.</p><h2>On this floor</h2><div class=\"axis-grp\"><div class=\"ph\">NPCs & Guides</div><ul><li><a class=\"wl\" href=\"#cheryl\">Cheryl</a> <span class=\"st-bad\">Dead</span></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">Bestiary</div><ul><li><a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> <span class=\"st-bad\">Dead</span></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">Places</div><ul><li><a class=\"wl\" href=\"#the-stairwell\">The Stairwell</a></li></ul></div>", "backlinks": [], "search": "the surface after the flattening, before the descent. roughly one hour."}, {"id": "floor-01", "title": "Floor 1", "group": "Floors", "type": "floor", "typeLabel": "Floor", "dek": "Lichen-lit tunnels. Junctions that lead to more junctions.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>Stone corridors lined with green lichen that gives off just enough light to see by. Every intersection leads to another intersection. The party arrived soaked in blood within their first hour.</p><p><a class=\"wl\" href=\"#borant-corporation\">The Borant Corporation</a>'s entry announcement recommends immediately finding and using a tutorial guild — advice that is easier given than followed when every corridor looks like the last one.</p><h2>On this floor</h2><div class=\"axis-grp\"><div class=\"ph\">Crawlers</div><ul><li><a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> <span class=\"st-good\">Active</span></li><li><a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> <span class=\"st-good\">Active</span></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">NPCs & Guides</div><ul><li><a class=\"wl\" href=\"#mauritius\">Mauritius</a> <span class=\"st-good\">Active</span></li><li><a class=\"wl\" href=\"#michelle\">Michelle</a> <span class=\"st-good\">Active</span></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">Bestiary</div><ul><li><a class=\"wl\" href=\"#the-white-dress-girls\">The Girls in White Dresses</a> <span class=\"st-good\">Active</span></li><li><a class=\"wl\" href=\"#the-wall-of-blood\">The Wall of Blood</a> <span class=\"st-good\">Active</span></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">Places</div><ul><li><a class=\"wl\" href=\"#tutorial-guild\">The Tutorial Guild</a></li></ul></div><div class=\"axis-grp\"><div class=\"ph\">Loot & Gear</div><ul><li><a class=\"wl\" href=\"#nailed-two-by-four\">Nailed Two-by-Four</a></li><li><a class=\"wl\" href=\"#oddments\">Oddments</a></li><li><a class=\"wl\" href=\"#paddle-club\">Paddle Club</a></li><li><a class=\"wl\" href=\"#sawn-off-shotgun\">Sawn-off Shotgun</a></li></ul></div>", "backlinks": ["session-00", "the-stairwell", "the-world-dungeon"], "search": "floor 1 lichen-lit tunnels. junctions that lead to more junctions."}, {"id": "darcy-smith", "title": "Darcy Smith", "group": "Crawlers", "type": "crawler", "typeLabel": "Crawler", "dek": "Long-haul trucker. Sawn-off shotgun. No loved ones.", "conf": "hi", "confLabel": "Confirmed", "player": "aussiebapps7569", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>American, driving through Noosa, stopped for a few bevvies and a rest before getting back on the lonely road. Was on the beach with a beer when the world ended, and had a <a class=\"wl\" href=\"#sawn-off-shotgun\">Sawn-off Shotgun</a> stitched into his pants line, which nobody has satisfactorily explained.</p><p>Charismatic and quick, and not at all clever — dexterity six, charisma five, strength four, constitution three, intelligence two, and openly uninterested in magic. Talked <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> into nearly walking away from the stairs by offering him a truck full of beer, water, food and a full tank.</p><p>Carries a Bible and a set of jumper cables as his oddments. Named <a class=\"wl\" href=\"#michelle\">Michelle</a> \"Big Tits McGee\" within a minute of meeting her and has not stopped.</p>", "backlinks": ["call-a-play", "frank-doyle", "michelle", "oddments", "sawn-off-shotgun", "session-00", "the-wall-of-blood"], "search": "darcy smith long-haul trucker. sawn-off shotgun. no loved ones."}, {"id": "frank-doyle", "title": "Frank Doyle", "group": "Crawlers", "type": "crawler", "typeLabel": "Crawler", "dek": "Hospitality burnout and uni dropout. Treats this as his isekai moment.", "conf": "hi", "confLabel": "Confirmed", "player": "gy0410", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": ["Frankie", "Frankie Doyle", "The Unpaid Intern of the Dungeon", "UIOTD"], "html": "<p>Came up to Noosa for the weekend to clear his head about dropping out of university and whether to go back. Decided within about ninety seconds of the apocalypse that he had been gaming his whole life for this exact moment.</p><p>Smarter than his companion and considerably weaker — intelligence plus three, evade plus two, and a strength score he describes as \"not that strong\". Fights with a <a class=\"wl\" href=\"#paddle-club\">Paddle Club</a>, and looted <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a>'s <a class=\"wl\" href=\"#nailed-two-by-four\">Nailed Two-by-Four</a> on the way down the stairs.</p><p>Carries a blueberry-ice vape and a water bottle. Called the party's first play and has been calling them since.</p><div class=\"panel note\"><div class=\"ph\">He renamed himself mid-session</div><p>Started the night as <em>The Unpaid Intern of the Dungeon</em>, asked for a do-over, and took the name Frank Doyle on the beach while introducing himself to <a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a>.</p></div>", "backlinks": ["call-a-play", "nailed-two-by-four", "oddments", "paddle-club", "session-00", "the-wall-of-blood"], "search": "frank doyle frankie frankie doyle the unpaid intern of the dungeon uiotd hospitality burnout and uni dropout. treats this as his isekai moment."}, {"id": "cheryl", "title": "Cheryl", "group": "NPCs & Guides", "type": "npc", "typeLabel": "NPC", "dek": "Michelle's cousin. Killed at the stairwell.", "conf": "mid", "confLabel": "Needs review", "player": "", "status": "dead", "statusLabel": "Dead", "statusTone": "bad", "axis": "Surface", "axisLabel": "Floor", "aliases": [], "html": "<p>Out for an evening swim with <a class=\"wl\" href=\"#michelle\">Michelle</a> when the collapse happened. <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> hit her in the back of the head with a <a class=\"wl\" href=\"#nailed-two-by-four\">Nailed Two-by-Four</a> at the top of the stairs. She was dead on the ground before the party arrived, and <a class=\"wl\" href=\"#michelle\">Michelle</a> was still asking after her on Floor 1.</p>", "backlinks": ["dale-prosky", "michelle", "nailed-two-by-four", "session-00"], "search": "cheryl michelle's cousin. killed at the stairwell."}, {"id": "mauritius", "title": "Mauritius", "group": "NPCs & Guides", "type": "npc", "typeLabel": "NPC", "dek": "Tutorial guide. Bat-like. Hangs from the ceiling.", "conf": "lo", "confLabel": "Low confidence", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>Unfolded from the roof of <a class=\"wl\" href=\"#tutorial-guild\">The Tutorial Guild</a>, landed gracefully, and introduced herself as the party's tutorial guide. Walked them through the mundanity of the game — characters, party tab, health, the interface.</p><div class=\"panel note warn\"><div class=\"ph\">Name unconfirmed</div><p>Recovered from a single spoken line and never spelled out. Correct this before it becomes canon.</p></div>", "backlinks": ["session-00", "tutorial-guild"], "search": "mauritius tutorial guide. bat-like. hangs from the ceiling."}, {"id": "michelle", "title": "Michelle", "group": "NPCs & Guides", "type": "npc", "typeLabel": "NPC", "dek": "Rescued at the stairwell. Travelling with the party, under protest.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": ["Big Tits McGee", "BTM", "BTJ", "Big T McGee"], "html": "<p>Was out for an evening dip with her cousin <a class=\"wl\" href=\"#cheryl\">Cheryl</a> when the world flattened. Still in her bathers. <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> took her hostage in front of the stairs with a hand around her neck, and she was still in the middle of the fight when it went down the stairs — she grabbed at the <a class=\"wl\" href=\"#sawn-off-shotgun\">Sawn-off Shotgun</a> mid-scrum and nearly got herself shot.</p><p>She came down with the party because she did not want to be alone, and because the two of them were not the most frightening thing she had met that night. She has since been given a club and told to defend herself, and has thought seriously about using it on <a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> instead.</p><p>Not a player character. Played, in the GM's words, loosey-goosey.</p><div class=\"panel note\"><div class=\"ph\">One person, four names</div><p>She corrected the party — my name is Michelle, not Big Tits McGee — and was immediately renamed BTJ instead. Every variant is listed above so they all resolve here.</p></div>", "backlinks": ["cheryl", "dale-prosky", "darcy-smith", "paddle-club", "session-00", "the-wall-of-blood"], "search": "michelle big tits mcgee btm btj big t mcgee rescued at the stairwell. travelling with the party, under protest."}, {"id": "borant-corporation", "title": "The Borant Corporation", "group": "The Production", "type": "production", "typeLabel": "Production", "dek": "Assigned planetary regent. Chose option three.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "", "axisLabel": "Floor", "aliases": ["Borent Corporation", "Borant"], "html": "<p>Granted regency over the solar system by <a class=\"wl\" href=\"#the-syndicate\">The Syndicate</a> after humanity failed to file a proper appeal for its own mineral and elemental rights within fifty solars of first contact. Having crushed the interior of the world and begun mining it, Borant was entitled to choose the manner in which surviving humans could reclaim their lost matter.</p><p>It chose option three: <a class=\"wl\" href=\"#the-world-dungeon\">The World Dungeon</a>.</p><p>Its announcements arrive as floating text in front of your face, in letters that crawl downward rather than across, in a language you have never learned and can read perfectly.</p>", "backlinks": ["floor-01", "session-00", "surface", "the-syndicate", "the-world-dungeon"], "search": "the borant corporation borent corporation borant assigned planetary regent. chose option three."}, {"id": "the-syndicate", "title": "The Syndicate", "group": "The Production", "type": "production", "typeLabel": "Production", "dek": "Wrote the rules Earth was seized under.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p>The authority whose subsection 543 of the precious elemental reserves code permitted the seizure of the planet, and whose indigenous planetary species protection act obliges <a class=\"wl\" href=\"#borant-corporation\">The Borant Corporation</a> to offer survivors a way to reclaim what was taken.</p><p>Named once, in the announcement. Nothing else is known yet.</p>", "backlinks": ["session-00", "borant-corporation"], "search": "the syndicate wrote the rules earth was seized under."}, {"id": "dale-prosky", "title": "Dale Prosky", "group": "Bestiary", "type": "mob", "typeLabel": "Bestiary", "dek": "The warm-up act. Charged admission to the end of the world.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "dead", "statusLabel": "Dead", "statusTone": "bad", "axis": "Surface", "axisLabel": "Floor", "aliases": ["Drunk Dickwad Stair Bully", "the stair bully"], "html": "<p>Twenty minutes after his species received formal notice of its own extinction, Dale found a staircase, stood in front of it, and began charging admission. He did not own the staircase. He did not own anything. He did own a two-foot length of timber with nails through it, and he stood between the survivors of a dead world and their only way out.</p><p>In Dale's mind this was a completely functional and logical road for his life.</p><p>Visibly under the influence, freakishly strong for it, and erratic. Killed <a class=\"wl\" href=\"#cheryl\">Cheryl</a> and at least one other before the party arrived, then took <a class=\"wl\" href=\"#michelle\">Michelle</a> hostage. Took a point-blank shotgun shot that missed, several club hits, and a beer can to the head.</p><p>Died on the way down <a class=\"wl\" href=\"#the-stairwell\">The Stairwell</a>, underneath the scrum, with his neck at an ungodly angle.</p><div class=\"panel note\"><div class=\"ph\">Roughly four billion of your neighbours died in the collapse</div><p>And this is the one your planet chose to save. The GM's introduction, delivered as a broadcast warm-up act — the first sign that the show is watching.</p></div>", "backlinks": ["cheryl", "darcy-smith", "frank-doyle", "michelle", "nailed-two-by-four", "sawn-off-shotgun", "session-00", "the-stairwell"], "search": "dale prosky drunk dickwad stair bully the stair bully the warm-up act. charged admission to the end of the world."}, {"id": "the-white-dress-girls", "title": "The Girls in White Dresses", "group": "Bestiary", "type": "mob", "typeLabel": "Bestiary", "dek": "Two of them. Green-skinned. Laughing.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>First heard as children's laughter coming from ahead and behind at the same time. Twice glimpsed in the middle distance as two figures in white, side by side, gone on a second look.</p><p>Seen properly after <a class=\"wl\" href=\"#the-wall-of-blood\">The Wall of Blood</a>: two green-skinned girls in pristine white dresses, walking forward in perfect unison, spotless in a corridor running with blood. The laughter does not match the serious look on their faces.</p><p>The party ran.</p>", "backlinks": ["session-00"], "search": "the girls in white dresses two of them. green-skinned. laughing."}, {"id": "the-wall-of-blood", "title": "The Wall of Blood", "group": "Bestiary", "type": "mob", "typeLabel": "Bestiary", "dek": "A red avalanche that fills the corridor. Comes and goes.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>Announced by a rumbling in the floor, then thirty feet of blood filling the corridor wall to wall at a great rate of knots, stripping lichen off the stone as it goes.</p><p><a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> rolled a natural twenty, climbed the wall, caught hold of a brazier and held on with <a class=\"wl\" href=\"#michelle\">Michelle</a> over his shoulder. <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> tried to surf it, ate a wall, and came out coughing thick mucusy blood.</p><p>It subsides on its own. The GM was clear that it comes and goes.</p>", "backlinks": ["session-00", "the-white-dress-girls"], "search": "the wall of blood a red avalanche that fills the corridor. comes and goes."}, {"id": "noosa", "title": "Noosa", "group": "Places", "type": "place", "typeLabel": "Place", "dek": "Queensland beach town. Lovely all year round.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "Pre-Collapse", "axisLabel": "Floor", "aliases": [], "html": "<p>Where both crawlers happened to be at 9pm. A beach, a boulevard strip worth going to, and a warm evening — none of which survived the flattening. Everything that lined the boulevard and made it worth visiting is gone.</p>", "backlinks": [], "search": "noosa queensland beach town. lovely all year round."}, {"id": "the-stairwell", "title": "The Stairwell", "group": "Places", "type": "place", "typeLabel": "Place", "dek": "The way down. Glowed. Guarded.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "Surface", "axisLabel": "Floor", "aliases": [], "html": "<p>The light at the far end of the strip, visible from the beach and further away than it looked. Tens of people gathered near it in the dark, and a small heap of bodies lay at its foot courtesy of <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a>.</p><p>Below it, a short corridor ending in a ginormous ornate set of doors worked in metallic relief with something that could be described as demonic, or possibly aquatic. The doorway crashed closed behind the party as they crossed into <a class=\"wl\" href=\"#floor-01\">Floor 1</a>.</p>", "backlinks": ["call-a-play", "dale-prosky", "nailed-two-by-four", "session-00"], "search": "the stairwell the way down. glowed. guarded."}, {"id": "tutorial-guild", "title": "The Tutorial Guild", "group": "Places", "type": "place", "typeLabel": "Place", "dek": "Bead curtains, yoga mats, incense, body odour.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>A door found round a corner at a dead run, marked with words to the effect of <em>Tutorial Guild</em>. Inside, something between a health retreat and a share-house lounge room: bead curtains, yoga mats spread about, incense candles burning, and a powerful smell of body odour.</p><p><a class=\"wl\" href=\"#mauritius\">Mauritius</a> was hanging from the ceiling. Safe enough for a short rest and a full heal.</p>", "backlinks": ["mauritius", "session-00"], "search": "the tutorial guild bead curtains, yoga mats, incense, body odour."}, {"id": "nailed-two-by-four", "title": "Nailed Two-by-Four", "group": "Loot & Gear", "type": "item", "typeLabel": "Item", "dek": "Dale's. Looted off his body. 1d8+3 in his hands.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": ["2b4", "two before"], "html": "<p>Two feet of timber with gnarly bits of nail sticking out of it. Killed <a class=\"wl\" href=\"#cheryl\">Cheryl</a> and at least one other person, and opened <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a>'s neck for eight damage on the first swing of the campaign.</p><p><a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> picked it up off <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a>'s body at the bottom of <a class=\"wl\" href=\"#the-stairwell\">The Stairwell</a>.</p>", "backlinks": ["cheryl", "frank-doyle"], "search": "nailed two-by-four 2b4 two before dale's. looted off his body. 1d8+3 in his hands."}, {"id": "oddments", "title": "Oddments", "group": "Loot & Gear", "type": "item", "typeLabel": "Item", "dek": "What each crawler happened to have on them.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>Everything the party brought into the dungeon by accident rather than design.</p><ul><li><a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> — a Bible, and a set of jumper cables.</li><li><a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> — a blueberry-ice vape, and a water bottle.</li></ul><p>The vape has already been shared twice and constitutes most of the party's diplomacy to date.</p>", "backlinks": [], "search": "oddments what each crawler happened to have on them."}, {"id": "paddle-club", "title": "Paddle Club", "group": "Loot & Gear", "type": "item", "typeLabel": "Item", "dek": "Frank's. 1d6+1 bludgeoning.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p><a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a>'s starting weapon. Handed to <a class=\"wl\" href=\"#michelle\">Michelle</a> on Floor 1 with the instruction to defend herself at all times, which she is considering doing in an unintended direction.</p>", "backlinks": ["frank-doyle"], "search": "paddle club frank's. 1d6+1 bludgeoning."}, {"id": "sawn-off-shotgun", "title": "Sawn-off Shotgun", "group": "Loot & Gear", "type": "item", "typeLabel": "Item", "dek": "Darcy's. 1d10 piercing, two hands. Jams.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "1", "axisLabel": "Floor", "aliases": [], "html": "<p>Range 20 to 30 feet, two hands to wield, 1d10 piercing. Was stitched into <a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a>'s pants line on an Australian beach, which the GM noted is not a thing you find on an Australian beach.</p><p>Jammed at point-blank range against <a class=\"wl\" href=\"#dale-prosky\">Dale Prosky</a> at the worst possible moment — the GM's ruling being that the weapon had been down a trucker's trousers for an unknown length of time and the maintenance had not been smart.</p>", "backlinks": ["darcy-smith", "michelle"], "search": "sawn-off shotgun darcy's. 1d10 piercing, two hands. jams."}, {"id": "the-world-dungeon", "title": "The World Dungeon", "group": "Quests & Achievements", "type": "quest", "typeLabel": "Quest", "dek": "Eighteen levels. Go down. Save the world.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "active", "statusLabel": "Active", "statusTone": "good", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p><a class=\"wl\" href=\"#borant-corporation\">The Borant Corporation</a>'s chosen method of letting surviving humans reclaim their lost matter, and the show built on top of it. Within one hour of the announcement you either entered or you didn't.</p><p>Eighteen levels down. The party is on <a class=\"wl\" href=\"#floor-01\">Floor 1</a>.</p><p><em>Achievements and loot boxes are earned in safe rooms. The GM intends to hand them out between sessions rather than interrupt play, so expect them to arrive by Discord as text and then as loot boxes at the table.</em></p>", "backlinks": ["session-00", "borant-corporation"], "search": "the world dungeon eighteen levels. go down. save the world."}, {"id": "call-a-play", "title": "Call a Play", "group": "Game Guide", "type": "rule", "typeLabel": "Game Guide", "dek": "Name it once. Roll 2d6, keep the highest, add it to your mate's roll.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p>Spend an action to call a play: roll 2d6, keep the highest, and add it to an ally's roll. The play needs a name, and the name sticks.</p><p><strong>The Looky-loo</strong> — <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a> gets the enemy's attention, <a class=\"wl\" href=\"#darcy-smith\">Darcy Smith</a> shoots them. Established on the beach on the way to <a class=\"wl\" href=\"#the-stairwell\">The Stairwell</a> and called twice in the first fight. <a class=\"wl\" href=\"#frank-doyle\">Frank Doyle</a>'s preferred name for it was rejected.</p>", "backlinks": ["session-00"], "search": "call a play name it once. roll 2d6, keep the highest, add it to your mate's roll."}, {"id": "combat", "title": "Combat", "group": "Game Guide", "type": "rule", "typeLabel": "Game Guide", "dek": "They signpost, you react. Two actions each.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p>Unlike most systems, the GM tells you what the enemy is about to do and you respond — the way a video game telegraphs an attack, and the way the books work.</p><ul><li><strong>Two actions per round</strong>, per crawler.</li><li><strong>Step</strong> — every action carries a free step of two squares (10 feet) with it.</li><li><strong>Move</strong> — 20 feet, four squares. Move plus step is 30 feet in one action.</li><li><strong>Evade</strong> — d20 plus your evade modifier against the incoming attack. Spending an action to</li></ul><p>evade is a real cost. Fail and you take it.</p><ul><li><strong>Intervene</strong> — spend an action to add 1d6 to an ally's near-miss and try to lift it into a</li></ul><p>success.</p><ul><li><strong>Natural 20</strong> is a triumph. You narrate why it worked.</li></ul><p>Each square on the battle map is five feet, so divide every range by five.</p><p>Enemy dice are rolled by the Dungeon AI.</p>", "backlinks": [], "search": "combat they signpost, you react. two actions each."}, {"id": "the-system", "title": "The System", "group": "Game Guide", "type": "rule", "typeLabel": "Game Guide", "dek": "Characteristics, health, safe rooms, loot.", "conf": "hi", "confLabel": "Confirmed", "player": "", "status": "", "statusLabel": "", "statusTone": "warn", "axis": "", "axisLabel": "Floor", "aliases": [], "html": "<p>Five characteristics — strength, dexterity, constitution, intelligence, charisma — each with a modifier that applies to every roll of that type. Health is a bar, tracked on the dashboard.</p><p>Safe rooms are where achievements and loot boxes happen, and where you can take a short rest and heal.</p><div class=\"panel note\"><div class=\"ph\">Running this game is the GM's second job</div><p>The published system runs to roughly a thousand pages of notes, thoughts and structure that don't talk to each other. Everything on the dashboard is linked to a rule that had to be dug out and translated first.</p></div>", "backlinks": [], "search": "the system characteristics, health, safe rooms, loot."}];
+const TITLES = {"borant-corporation": "The Borant Corporation", "call-a-play": "Call a Play", "cheryl": "Cheryl", "combat": "Combat", "dale-prosky": "Dale Prosky", "darcy-smith": "Darcy Smith", "floor-01": "Floor 1", "frank-doyle": "Frank Doyle", "mauritius": "Mauritius", "michelle": "Michelle", "nailed-two-by-four": "Nailed Two-by-Four", "noosa": "Noosa", "oddments": "Oddments", "paddle-club": "Paddle Club", "pre-collapse": "Pre-Collapse", "sawn-off-shotgun": "Sawn-off Shotgun", "session-00": "Session 00", "surface": "The Surface", "the-stairwell": "The Stairwell", "the-syndicate": "The Syndicate", "the-system": "The System", "the-wall-of-blood": "The Wall of Blood", "the-white-dress-girls": "The Girls in White Dresses", "the-world-dungeon": "The World Dungeon", "tutorial-guild": "The Tutorial Guild"};
+const BUILT  = "2026-09-28";
+const byId = Object.fromEntries(PAGES.map(p => [p.id, p]));
+let current = PAGES.length ? PAGES[0].id : "";
+
+const main = document.getElementById("main");
+const nav  = document.getElementById("nav");
+const q    = document.getElementById("q");
+
+function renderPage(id){
+  const p = byId[id];
+  if(!p) return "<p>Page not found.</p>";
+  let h = '<div class="crumb">' + p.group + '</div>';
+  h += '<h1 class="ttl">' + p.title + '</h1>';
+  if(p.dek) h += '<div class="dek">' + p.dek + '</div>';
+
+  if(p.type !== "doc"){
+    h += '<div class="badges"><span class="tag t-' + p.type + '">' + p.typeLabel + '</span>';
+    if(p.player) h += '<span class="tag">Played by ' + p.player + '</span>';
+    if(p.axis && p.type !== "floor") h += '<span class="tag">' + p.axisLabel + ' ' + p.axis + '</span>';
+    if(p.statusLabel) h += '<span class="tag"><span class="st-' + p.statusTone + '">' + p.statusLabel + '</span></span>';
+    if(p.conf)   h += '<span class="tag"><span class="conf"><span class="dot ' + p.conf + '"></span>' + p.confLabel + '</span></span>';
+    h += '</div>';
+    if(p.aliases.length){
+      h += '<div class="panel"><div class="ph">Also transcribed as</div><div>'
+         + p.aliases.map(a => '<span class="alias">' + a + '</span>').join('')
+         + '</div></div>';
+    }
+  }
+
+  h += '<div class="prose">' + p.html + '</div>';
+
+  if(p.backlinks.length){
+    h += '<div class="backlinks"><div class="ph">Mentioned in</div><ul>'
+       + p.backlinks.map(b => '<li><a href="#' + b + '">' + TITLES[b] + '</a></li>').join('')
+       + '</ul></div>';
+  }
+
+  h += '<div class="foot">Generated from session recordings, transcribed with '
+     + '<code>faster-whisper large-v3</code>. Names carry every surface form the transcripts '
+     + 'produced; anything marked <em>needs review</em> or <em>low confidence</em> is waiting on '
+     + 'confirmation before it becomes canon. Built ' + BUILT + '.</div>';
+  return h;
+}
+
+function renderNav(filter){
+  const f = (filter || "").trim().toLowerCase();
+  const groups = [];
+  PAGES.forEach(p => {
+    if(f && p.search.indexOf(f) === -1) return;
+    let g = groups.find(x => x.name === p.group);
+    if(!g){ g = {name:p.group, items:[]}; groups.push(g); }
+    g.items.push(p);
+  });
+  if(!groups.length) return '<div style="padding:4px 20px;color:var(--muted);font-size:14px">Nothing matches.</div>';
+  return groups.map(g =>
+    '<div class="grp"><div class="lbl">' + g.name + '</div>'
+    + g.items.map(p =>
+        '<a href="#' + p.id + '"' + (p.id === current ? ' aria-current="page"' : '') + '>'
+        + '<span>' + p.title + '</span>'
+        + (p.axis && p.type !== "floor" ? '<span class="n">' + p.axis + '</span>'
+           : (p.type !== "doc" && p.backlinks.length ? '<span class="n">' + p.backlinks.length + '</span>' : ''))
+        + '</a>').join('')
+    + '</div>').join('');
+}
+
+function route(){
+  const id = decodeURIComponent(location.hash.slice(1));
+  current = byId[id] ? id : (PAGES.length ? PAGES[0].id : "");
+  main.innerHTML = renderPage(current);
+  nav.innerHTML = renderNav(q.value);
+  document.title = (byId[current] ? byId[current].title + " · " : "") + "Dungeon Crawler Carl";
+  window.scrollTo(0, 0);
+}
+
+window.addEventListener("hashchange", route);
+q.addEventListener("input", function(){ nav.innerHTML = renderNav(q.value); });
+
+document.getElementById("themebtn").addEventListener("click", function(){
+  const root = document.documentElement;
+  const now = root.getAttribute("data-theme");
+  const dark = now ? now === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+  root.setAttribute("data-theme", dark ? "light" : "dark");
+  try { localStorage.setItem("wd-theme", dark ? "light" : "dark"); } catch(e){}
+});
+try {
+  const saved = localStorage.getItem("wd-theme");
+  if(saved) document.documentElement.setAttribute("data-theme", saved);
+} catch(e){}
+
+route();
+</script>
+</body>
+</html>

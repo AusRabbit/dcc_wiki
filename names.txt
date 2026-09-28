@@ -1,0 +1,23 @@
+# Canonical names only - pass to the transcriber with --names.
+# Do NOT add misspellings here; they belong in corrections.json.
+Borant
+Cheryl
+Dale Prosky
+Darcy Smith
+Frank
+Frank Doyle
+Mauritius
+Michelle
+Nailed Two-by-Four
+Noosa
+Oddments
+Paddle Club
+Sawn-off Shotgun
+The Borant Corporation
+The Girls in White Dresses
+The Stairwell
+The Syndicate
+The Tutorial Guild
+The Wall of Blood
+The World Dungeon
+two-by-four
