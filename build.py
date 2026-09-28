@@ -14,6 +14,7 @@ import pathlib
 import re
 import sys
 from datetime import date
+from reference import load_reference_pages
 
 ROOT = pathlib.Path(__file__).parent
 CONTENT = ROOT / "content"
@@ -214,8 +215,10 @@ def render_threads(body, resolve, unresolved):
 # ---------------------------------------------------------------- assembly
 
 def build():
-    pages = load_pages()
+    pages = load_pages() + load_reference_pages(ROOT)
     by_id = {p["id"]: p for p in pages}
+    if len(by_id) != len(pages):
+        raise ValueError("Duplicate page IDs across campaign and reference pages")
 
     alias_index = {}
     for p in pages:
@@ -235,7 +238,13 @@ def build():
         found = []
         layout = p.get("layout", "prose")
         renderer = {"timeline": render_timeline, "threads": render_threads}.get(layout, render_prose)
-        p["html"] = renderer(p["raw"], resolve, found)
+        if "html" not in p:
+            p["html"] = renderer(p["raw"], resolve, found)
+        else:
+            # Validate the generated reference link graph too.
+            for m in WIKILINK.finditer(p["raw"]):
+                if not resolve(m.group(1).strip()):
+                    found.append(m.group(1).strip())
         unresolved_all += [(p["id"], t) for t in found]
         targets = {resolve(m.group(1).strip()) for m in WIKILINK.finditer(p["raw"])}
         graph[p["id"]] = {t for t in targets if t and t != p["id"]}
@@ -295,6 +304,8 @@ def build():
     for p in sorted(pages, key=sort_key):
         payload.append({
             "id": p["id"],
+            "reference": p.get("reference", False),
+            "referenceEntry": p.get("reference_entry", False),
             "title": p["title"],
             "group": p.get("group", "Other"),
             "type": p.get("type", "thing"),
@@ -311,14 +322,14 @@ def build():
             "aliases": p["aliases"],
             "html": p["html"],
             "backlinks": sorted(backlinks[p["id"]], key=lambda i: by_id[i]["title"]),
-            "search": " ".join([p["title"]] + p["aliases"] + [p.get("dek", "")]).lower(),
+            "search": " ".join([p["title"]] + p["aliases"] + [p.get("dek", ""), p.get("search_extra", "")]).lower(),
         })
 
     titles = {p["id"]: p["title"] for p in pages}
     tpl = (ROOT / "template.html").read_text(encoding="utf-8")
     page = (tpl
-            .replace("/*__PAGES__*/", json.dumps(payload, ensure_ascii=False))
-            .replace("/*__TITLES__*/", json.dumps(titles, ensure_ascii=False))
+            .replace("/*__PAGES__*/", json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c"))
+            .replace("/*__TITLES__*/", json.dumps(titles, ensure_ascii=False).replace("<", "\\u003c"))
             .replace("__TITLE__", CFG["title"])
             .replace("__SUBTITLE__", CFG["subtitle"])
             .replace("__BUILT__", date.today().isoformat()))

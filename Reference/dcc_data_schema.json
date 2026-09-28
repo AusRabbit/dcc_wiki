@@ -1,0 +1,33 @@
+{
+  "format_version": "1.0",
+  "purpose": "Field guide for dcc_skills.json and dcc_spells.json",
+  "entry_fields": {
+    "id": "URL/dashboard-friendly slug.",
+    "name": "Display name.",
+    "kind": "attack_skill, utility_skill, or spell.",
+    "subsection": "Attack-skill subgroup; null otherwise.",
+    "flavor_text": "Italic flavor text directly attached to the entry.",
+    "tags_raw": "Source metadata line preserved as text.",
+    "stat": "Primary listed Stat, normalized to full name when present.",
+    "passive": "True if tagged Passive.",
+    "interrupt": "True if tagged Interrupt.",
+    "area_of_effect": "True if tagged Area of Effect.",
+    "attack_mode": "melee/ranged for weapon attack skills when listed.",
+    "damage_effect_for": "Parent attack skill(s) for a Damage Effect skill.",
+    "spell_mode": "attack/heal/passive/other for spells.",
+    "favored_classes": "Classes listed after Favored:.",
+    "damage_types": "Damage/effect types parsed from tags/base damage.",
+    "mana_cost": "Mana Cost as source text.",
+    "range": "Range as source text.",
+    "duration": "Duration as source text.",
+    "cooldown": "Cooldown as source text.",
+    "ai_favor": "AI Favor as source text.",
+    "limitations": "Limitations text.",
+    "base_damage": "Base Damage text.",
+    "description": "Main rules/body text, with paragraph breaks.",
+    "upgrades": "Object keyed by Rank (normally 5, 10, 15).",
+    "upgrades_note": "Used when the source says there are no upgrades.",
+    "raw_text": "Normalized entry text retained as a fallback/reference.",
+    "source": "PDF and printed-page ranges for traceability."
+  }
+}

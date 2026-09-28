@@ -1,0 +1,2421 @@
+{
+  "format_version": "1.0",
+  "source": {
+    "book": "Dungeon Crawler Carl Roleplaying Game Core Rulebook: Royal Court Edition",
+    "chapter": "Chapter 4: Skills, Spells, & Gear",
+    "edition": "Royal Court Edition",
+    "source_file": "carl_rpg_core_rulebook_digital_hi-res_watermarked.pdf",
+    "extraction_note": "Structured from the user-provided PDF. pdf_pages are 1-indexed PDF pages; printed_pages are the page numbers printed in the book.",
+    "section": "Spells",
+    "pdf_page_range": [
+      204,
+      216
+    ],
+    "printed_page_range": [
+      202,
+      214
+    ]
+  },
+  "counts": {
+    "spells_total": 54
+  },
+  "rules": [
+    {
+      "id": "spells-overview",
+      "heading": "Spells",
+      "text": "Spells are the strange, dangerous, and occasionally irresponsible way crawlers bend reality. Some Spells heal wounds or reshape the battlefield, and others exist primarily to make something stop moving— permanently. Spells cannot be attempted untrained except via a scroll. Every Spell listed in this section follows the same core rules for things like casting, targeting, and spend-ing Mana. Spell listings include a variety of terms or fields associated with them, including: Name: The name of the Spell appears as a headline to the entry. Type: Whether the Spell is an Attack or Passive is noted under the flavor text. The type of damage delivered from Attack Spells is also listed here for quick reference. Spells default to your Int Mod for to-hit and damage rolls. If a different Stat is listed here, that Stat is used to hit and damage, but Spells all still use Intelligence for Mana. If the spell is Favored by any particular Classes, other Classes pay 1 additional Mana to cast it. Mana Cost: The Mana cost to cast the Spell. Range: The range of the Spell. Melee means 5ft (adjacent). Duration: Some Spells are not instantaneous. When the duration is reached, the Spell effect wears off at the end of that round. AI Favor: Low-damage Spells grant AI Favor to you if you use such a wimpy attack for a majority of your attacks during a combat that lasts for at least three rounds. Limitations: If there are conditions, requirements, or exclusions, they go here. Cooldown: If the Spell has a cooldown, it is listed here. You can’t cast the Spell during its cooldown. Description: Any notes or descriptions of the general effect seen when you cast the Spell are listed here. If the Spell requires a Spell Check, that is also provided here. Base Damage: This is the damage the Spell deals with 1–4 Ranks in the Spell. You add your Int to the base damage, unless it says otherwise. The damage type is listed here as well. Upgrades: These are bonuses you gain when you reach the listed Rank in the Spell. The first entry of each benefit adds a damage die of the same type to the base damage of the Spell. Additional damage dice and effects are also listed here.",
+      "source": {
+        "pdf_pages": [
+          204,
+          204
+        ],
+        "printed_pages": [
+          202,
+          202
+        ]
+      }
+    },
+    {
+      "id": "spells-in-your-hotlist",
+      "heading": "Spells in Your Hotlist",
+      "text": "Don’t forget that Spells need to be in your Hotlist to cast them in combat or other stressful situations. Write down the specific combat text for your Spell in the “Attacks” section on the front of your character sheet. When you write a Spell on your Hotlist, you need only list additional notes like the Mana cost and Range of the Spell. Attack Spells require you to make an Attack Skill Check vs. the target’s Evade. Spells that don’t require a Check to be made when cast (non-Attack Spells) are tagged as Passive and simply happen, but those are not marked for Skill Advancement (p. 169) when used. Instead, their Ranks must be raised via magical means or trained at a guild.",
+      "source": {
+        "pdf_pages": [
+          204,
+          204
+        ],
+        "printed_pages": [
+          202,
+          202
+        ]
+      }
+    },
+    {
+      "id": "creating-your-own-spells",
+      "heading": "Creating Your Own Spells",
+      "text": "In the ways that count, Spells are just a special type of Skill. Create them in the same way as you’re create a Skill (p. 174–175).",
+      "source": {
+        "pdf_pages": [
+          204,
+          204
+        ],
+        "printed_pages": [
+          202,
+          202
+        ]
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "air-buddy",
+      "name": "Air Buddy",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“There’s no dungeon rule that a dog can’t fly.”",
+      "tags_raw": "Passive, Favored: Mage",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [
+        "Mage"
+      ],
+      "damage_types": [],
+      "mana_cost": "12",
+      "range": "Self",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You launch yourself with enough force to fly, hurtling forward from your current position up to 10 × your Int Mod away. You land safely if you land on solid ground; otherwise, you fall (see p. 76). You can cast this twice in a row to “double jump” just like in platforming video games.",
+      "upgrades": {
+        "5": "You may choose one additional willing target up to your size at touch range, who you bring with you.",
+        "10": "You can fly up to 20 × your Int Mod away with this spell.",
+        "15": "You may choose up to five additional willing targets up to your size at touch range to bring with you."
+      },
+      "upgrades_note": null,
+      "raw_text": "AIR BUDDY\n“There’s no dungeon rule that a dog can’t fly.”\nPassive, Favored: Mage\nMana Cost: 12\nRange: Self\nYou launch yourself with enough force to fly, hurtling for‑\nward from your current position up to 10 × your Int Mod\naway. You land safely if you land on solid ground; other‑\nwise, you fall (see p. 76). You can cast this twice in a row\nto “double jump” just like in platforming video games.\nUPGRADES\nRank 5: You may choose one additional willing target\nup to your size at touch range, who you bring with you.\nRank 10: You can fly up to 20 × your Int Mod away\nwith this spell.\nRank 15: You may choose up to five additional willing\ntargets up to your size at touch range to bring with you.",
+      "source": {
+        "pdf_pages": [
+          204,
+          204
+        ],
+        "printed_pages": [
+          202,
+          202
+        ]
+      }
+    },
+    {
+      "id": "astral-paw-astral-hand-astral-claw",
+      "name": "Astral Paw (Astral Hand, Astral Claw)",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“You have summoned an Astral Paw. Yes, just the paw. Budget constraints.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "12",
+      "range": "30 feet",
+      "duration": "Until the end of combat or 5 minutes.",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You conjure a spectral hand, paw, or claw, looking much like your own. You can use this astral appendage to manipulate objects up to 30ft away by spending an Action. You can use the Astral Paw to make Skill Checks but suffer Disadvantage due to a lack of fine control.",
+      "upgrades": {
+        "5": "Your Pugilism and Slice Attacks with the Paw add 1 Astral Paw Rank damage die.",
+        "10": "You can conjure a paw up to four size categories larger than your own, and the range increases to 50 feet.",
+        "15": "The caster no longer suffers Disadvantage when performing suitable Skill Checks using the paw, and the duration is 15 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "ASTRAL PAW (ASTRAL HAND, ASTRAL CLAW)\n“You have summoned an Astral Paw. Yes, just the\npaw. Budget constraints.”\nPassive\nMana Cost: 12\nRange: 30 feet\nDuration: Until the end of combat or 5 minutes.\nYou conjure a spectral hand, paw, or claw, looking\nmuch like your own. You can use this astral appendage\nto manipulate objects up to 30ft away by spending an\nAction. You can use the Astral Paw to make Skill Checks\nbut suffer Disadvantage due to a lack of fine control.\nUPGRADES\nRank 5: Your Pugilism and Slice Attacks with the Paw\nadd 1 Astral Paw Rank damage die.\nRank 10: You can conjure a paw up to four size\ncategories larger than your own, and the range\nincreases to 50 feet.\nRank 15: The caster no longer suffers Disadvantage\nwhen performing suitable Skill Checks using the paw,\nand the duration is 15 minutes.",
+      "source": {
+        "pdf_pages": [
+          205,
+          205
+        ],
+        "printed_pages": [
+          203,
+          203
+        ]
+      }
+    },
+    {
+      "id": "bad-faith",
+      "name": "Bad Faith",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“The system has classified your prayers as a hostile act.”",
+      "tags_raw": "Attack, Necrotic, Charisma, Favored: Cleric",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Cleric"
+      ],
+      "damage_types": [
+        "Necrotic"
+      ],
+      "mana_cost": "10",
+      "range": "40 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d8 + Cha Necrotic",
+      "description": "An unholy presence invades your victim’s mind, body, and soul.",
+      "upgrades": {
+        "5": "+1d8 base damage, +5ft Splash",
+        "10": "+1d8 base damage, and end all Buffs on the victims for the duration of the combat.",
+        "15": "+1d8 base damage, +5ft Splash"
+      },
+      "upgrades_note": null,
+      "raw_text": "BAD FAITH\n“The system has classified your prayers\nas a hostile act.”\nAttack, Necrotic, Charisma, Favored:\nCleric\nMana Cost: 10\nRange: 40 feet\nAn unholy pres‑\nence invades your\nvictim’s mind, body,\nand soul.\nBase Damage:\n1d8 + Cha\nNecrotic\nUPGRADES\nRank 5: +1d8\nbase damage, +5ft\nSplash\nRank 10: +1d8 base damage,\nand end all Buffs on the victims for\nthe duration of the combat.\nRank 15: +1d8 base damage, +5ft\nSplash",
+      "source": {
+        "pdf_pages": [
+          205,
+          205
+        ],
+        "printed_pages": [
+          203,
+          203
+        ]
+      }
+    },
+    {
+      "id": "bang-bro",
+      "name": "Bang Bro",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“When you want more zing in your zinger.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "5",
+      "range": "5 feet",
+      "duration": "5 minutes + 1 minute per Rank",
+      "cooldown": "15 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Place a hot and crackling temporary enchantment on a weapon you are holding.\n\nYour weapon deals +2 mixed Fire and Electric damage.",
+      "upgrades": {
+        "5": "+1d6 Fire and Electric damage",
+        "10": "+1d6 Fire and Electric damage, and on an Amazing Success, the target of the weapon attack gains the Burned Debuff.",
+        "15": "+1d6 Fire and Electric damage, and on an Amazing Success, the target of the weapon attack also gains the Shocked Debuff."
+      },
+      "upgrades_note": null,
+      "raw_text": "BANG BRO\n“When you want more zing in your zinger.”\nPassive\nMana Cost: 5\nRange: 5 feet\nDuration: 5 minutes + 1 minute per Rank\nCooldown: 15 minutes\nPlace a hot and crackling temporary enchantment on a\nweapon you are holding.\nYour weapon deals +2 mixed Fire and Electric damage.\nUPGRADES\nRank 5: +1d6 Fire and Electric damage\nRank 10: +1d6 Fire and Electric damage, and on an\nAmazing Success, the target of the weapon attack\ngains the Burned Debuff.\nRank 15: +1d6 Fire and Electric damage, and on an\nAmazing Success, the target of the weapon attack also\ngains the Shocked Debuff.",
+      "source": {
+        "pdf_pages": [
+          205,
+          205
+        ],
+        "printed_pages": [
+          203,
+          203
+        ]
+      }
+    },
+    {
+      "id": "clockwork-triplicate",
+      "name": "Clockwork Triplicate",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“If one is good, then three is a party.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "26",
+      "range": "5 feet",
+      "duration": "1 minute per Rank",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "Only castable on pets and minions.",
+      "base_damage": null,
+      "description": "When you cast this spell upon your pet or minion, it splits into three, each with its full complement of abilities. You must spend an Action making an Unopposed Animal Handling Skill Check to issue a new command to each one separately.",
+      "upgrades": {
+        "5": "Duration is 2 minutes per Rank.",
+        "10": "Duration is 3 minutes per Rank.",
+        "15": "When you command your pet or minion, the clockwork versions follow suit."
+      },
+      "upgrades_note": null,
+      "raw_text": "CLOCKWORK TRIPLICATE\n“If one is good, then three is a party.”\nPassive\nMana Cost: 26\nRange: 5 feet\nDuration: 1 minute per\nRank\nLimitations: Only castable on\npets and minions.\nWhen you cast this spell\nupon your pet or minion, it\nsplits into three, each with\nits full complement of\nabilities. You must\nspend an Action\nmaking an Unopposed\nAnimal Handling\nSkill Check to issue a new\ncommand to each one separately.\nUPGRADES\nRank 5: Duration is 2 minutes per\nRank.\nRank 10: Duration is 3 minutes per Rank.\nRank 15: When you command your pet or minion, the\nclockwork versions follow suit.",
+      "source": {
+        "pdf_pages": [
+          205,
+          205
+        ],
+        "printed_pages": [
+          203,
+          203
+        ]
+      }
+    },
+    {
+      "id": "confusing-fog",
+      "name": "Confusing Fog",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Visibility reduced. Decision-making questionable.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "6",
+      "range": "40 feet",
+      "duration": "Until the end of two full rounds of combat or 20 seconds",
+      "cooldown": "15 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You create a billowing cloud of fog that you, your party members, and friendly NPCs can see through, but it obscures the area from Mobs, making it more difficult for them to attack you. Mobs attack with Disadvantage (see Mob Advantage and Disadvantage, p. 60) against targets in the fog.\n\nThis fog fills a 25 × 25ft area. Smart Mobs may attempt to move the combat out of the fog if able.",
+      "upgrades": {
+        "5": "The fog fills a 50 × 50ft area, and its duration is 1 minute.",
+        "10": "The fog fills a 100 × 100ft area and lasts for 5 minutes.",
+        "15": "The fog fills a 500 × 500ft area and lasts for 15 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "CONFUSING FOG\n“Visibility reduced. Decision-making questionable.”\nPassive\nMana Cost: 6\nRange: 40 feet\nDuration: Until the end of two full rounds of combat\nor 20 seconds\nCooldown: 15 minutes\nYou create a billowing cloud of fog that you, your party\nmembers, and friendly NPCs can see through, but it\nobscures the area from Mobs, making it more difficult\nfor them to attack you. Mobs attack with Disadvantage\n(see Mob Advantage and Disadvantage, p. 60) against\ntargets in the fog.\nThis fog fills a 25 × 25ft area. Smart Mobs may attempt\nto move the combat out of the fog if able.\nUPGRADES\nRank 5: The fog fills a 50 × 50ft area, and its duration\nis 1 minute.\nRank 10: The fog fills a 100 × 100ft area and lasts for\n5 minutes.\nRank 15: The fog fills a 500 × 500ft area and lasts for\n15 minutes.",
+      "source": {
+        "pdf_pages": [
+          206,
+          206
+        ],
+        "printed_pages": [
+          204,
+          204
+        ]
+      }
+    },
+    {
+      "id": "dirt-clod",
+      "name": "Dirt Clod",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“You have weaponized dirt.”",
+      "tags_raw": "Attack, Bludgeoning",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Bludgeoning"
+      ],
+      "mana_cost": "1",
+      "range": "100 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "2",
+      "limitations": null,
+      "base_damage": "1d2 + Int Bludgeoning",
+      "description": "You hurl a magical clod of dirt, leaving dirt and pebbles strewn about near the target.",
+      "upgrades": {
+        "5": "+2d2 base damage",
+        "10": "+1d2 base damage, and the target gains the Woozy Debuff.",
+        "15": "+1d2 base damage, and 1 Rank damage die."
+      },
+      "upgrades_note": null,
+      "raw_text": "DIRT CLOD\n“You have weaponized dirt.”\nAttack, Bludgeoning\nMana Cost: 1\nRange: 100 feet\nAI Favor: 2\nYou hurl a magical clod of dirt, leaving dirt and pebbles\nstrewn about near the target.\nBase Damage: 1d2 + Int Bludgeoning\nUPGRADES\nRank 5: +2d2 base damage\nRank 10: +1d2 base damage, and the target gains the\nWoozy Debuff.\nRank 15: +1d2 base damage, and 1 Rank damage die.",
+      "source": {
+        "pdf_pages": [
+          206,
+          206
+        ],
+        "printed_pages": [
+          204,
+          204
+        ]
+      }
+    },
+    {
+      "id": "drain-life",
+      "name": "Drain Life",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Organic tether deployed. Try not to think about where it’s been.”",
+      "tags_raw": "Attack, Necrotic",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Necrotic"
+      ],
+      "mana_cost": "14",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "For a brief instant, you create a disgusting blood vein that reaches out and wraps itself around your target.",
+      "base_damage": "1d6 + Int Necrotic",
+      "description": null,
+      "upgrades": {
+        "5": "+1d6 base damage, and if the target loses at least 3 Health Bar slots, you heal 1 Health Bar slot.",
+        "10": "+1d6 base damage, and if you heal this way, heal +1 Health Bar slot.",
+        "15": "+1d6 base damage, and if you heal this way, heal +1 Health Bar slot."
+      },
+      "upgrades_note": null,
+      "raw_text": "DRAIN LIFE\n“Organic tether deployed. Try not to think about\nwhere it’s been.”\nAttack, Necrotic\nMana Cost: 14\nRange: 30 feet\nLimitations: For a brief instant, you create a disgust‑\ning blood vein that reaches out and wraps itself around\nyour target.\nBase Damage: 1d6 + Int Necrotic\nUPGRADES\nRank 5: +1d6 base damage, and if the target loses at\nleast 3 Health Bar slots, you heal 1 Health Bar slot.\nRank 10: +1d6 base damage, and if you heal this way,\nheal +1 Health Bar slot.\nRank 15: +1d6 base damage, and if you heal this way,\nheal +1 Health Bar slot.",
+      "source": {
+        "pdf_pages": [
+          206,
+          206
+        ],
+        "printed_pages": [
+          204,
+          204
+        ]
+      }
+    },
+    {
+      "id": "earworm",
+      "name": "Earworm",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Hitting every note except the right ones.”",
+      "tags_raw": "Attack, Sonic, Charisma, Favored: Bard",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Bard"
+      ],
+      "damage_types": [
+        "Sonic"
+      ],
+      "mana_cost": "6",
+      "range": "30ft",
+      "duration": null,
+      "cooldown": "Once per round.",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d6 + Cha Sonic",
+      "description": "Sing a terrible song targeting the ear holes of a victim. Yes, sing a few bars so the GM understands the pain you’re inflicting.",
+      "upgrades": {
+        "5": "+1d6 base damage.",
+        "10": "+1d6 base damage, and the target gains the Queasy Debuff.",
+        "15": "+1d6 base damage and +10ft Splash."
+      },
+      "upgrades_note": null,
+      "raw_text": "EARWORM\n“Hitting every note except the right ones.”\nAttack, Sonic, Charisma, Favored: Bard\nMana Cost: 6\nRange: 30ft\nCooldown: Once per round.\nSing a terrible song targeting the ear holes of a victim.\nYes, sing a few bars so the GM understands the pain\nyou’re inflicting.\nBase Damage: 1d6 + Cha Sonic\nUPGRADES\nRank 5: +1d6 base damage.\nRank 10: +1d6 base damage, and the target gains the\nQueasy Debuff.\nRank 15: +1d6 base damage and +10ft Splash.",
+      "source": {
+        "pdf_pages": [
+          206,
+          206
+        ],
+        "printed_pages": [
+          204,
+          204
+        ]
+      }
+    },
+    {
+      "id": "fear",
+      "name": "Fear",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Run away, little piggies!”",
+      "tags_raw": "Attack, Mind Control",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Mind Control"
+      ],
+      "mana_cost": "3",
+      "range": "25 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "Warning: Scary-ass Mobs are immune to Fear effects (GM’s discretion).",
+      "base_damage": null,
+      "description": "Target a non-Boss Mob of half your level or less. On a Standard Success, it stands its ground, but it loses its Dex Mod for the duration of the combat. On a higher success, it uses two of its Actions during the next round to run away.",
+      "upgrades": {
+        "5": "+5ft Blast radius.",
+        "10": "+5ft Blast radius, and on a Critical Hit, the affected creatures gain the Paralyzed Debuff.",
+        "15": "+5ft Blast radius."
+      },
+      "upgrades_note": null,
+      "raw_text": "FEAR\n“Run away, little piggies!”\nAttack, Mind Control\nMana Cost: 3\nRange: 25 feet\nLimitations: Warning: Scary-ass Mobs are immune to\nFear effects (GM’s discretion).\nTarget a non-Boss Mob of half your level or less. On a\nStandard Success, it stands its ground, but it loses its\nDex Mod for the duration of the combat. On a higher\nsuccess, it uses two of its Actions during the next\nround to run away.\nUPGRADES\nRank 5: +5ft Blast radius.\nRank 10: +5ft Blast radius, and on a Critical Hit, the\naffected creatures gain the Paralyzed Debuff.\nRank 15: +5ft Blast radius.",
+      "source": {
+        "pdf_pages": [
+          206,
+          207
+        ],
+        "printed_pages": [
+          204,
+          205
+        ]
+      }
+    },
+    {
+      "id": "fireball",
+      "name": "Fireball",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“It almost reluctantly meanders toward you. Then your world explodes.”",
+      "tags_raw": "Attack, Fire, Area of Effect",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Fire"
+      ],
+      "mana_cost": "45",
+      "range": "80 feet",
+      "duration": null,
+      "cooldown": "Once per scene",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d12 + Int Fire, 10ft Blast radius",
+      "description": "A creeping beach ball-sized sphere of fire emanates from you. Since it moves so slowly, your attack is made with Disadvantage. When the impact zone has been determined, each creature in a 10ft Blast radius takes full damage.\n\nOn Fail, roll 1d8 for direction (see Figure 3, p. 200). The amount the Skill Check missed by is the distance away in feet it impacts.",
+      "upgrades": {
+        "5": "+1d12 base damage. Those who lose 1 or more Health Bar slots via this attack gain the Burned Debuff.",
+        "10": "+1d12 base damage and becomes an 80ft Line attack (and keeps the Blast).",
+        "15": "+1d12 base damage and +40ft Splash (on the Blast)."
+      },
+      "upgrades_note": null,
+      "raw_text": "FIREBALL\n“It almost reluctantly meanders toward you. Then\nyour world explodes.”\nAttack, Fire, Area of Effect\nMana Cost: 45\nRange: 80 feet\nCooldown: Once per scene\nA creeping beach ball-sized sphere of fire emanates\nfrom you. Since it moves so slowly, your attack is\nmade with Disadvantage. When the impact zone has\nbeen determined, each creature in a 10ft Blast radius\ntakes full damage.\nOn Fail, roll 1d8 for direction (see Figure 3, p. 200). The\namount the Skill Check missed by is the distance away\nin feet it impacts.\nBase Damage: 1d12 + Int Fire, 10ft Blast radius\nUPGRADES\nRank 5: +1d12 base damage. Those who lose 1 or more\nHealth Bar slots via this attack gain the Burned Debuff.\nRank 10: +1d12 base damage and becomes an 80ft\nLine attack (and keeps the Blast).\nRank 15: +1d12 base damage and +40ft Splash (on\nthe Blast).",
+      "source": {
+        "pdf_pages": [
+          207,
+          207
+        ],
+        "printed_pages": [
+          205,
+          205
+        ]
+      }
+    },
+    {
+      "id": "fire-fingers",
+      "name": "Fire Fingers",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Fire Fingers activated. Try not to make it weird.”",
+      "tags_raw": "Attack, Fire",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Fire"
+      ],
+      "mana_cost": "3",
+      "range": "Melee",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "1",
+      "limitations": null,
+      "base_damage": "1d4 + Int Fire",
+      "description": "Brilliant flame leaps from your fingers.",
+      "upgrades": {
+        "5": "+1d4 base damage.",
+        "10": "+1d4 base damage, and the target gains the Burned Debuff.",
+        "15": "+1d4 base damage, and your hands begin to intermittently burn. Your Pugilism, Unarmed Combat, and Slice Attack strikes add 1 Fire Fingers Rank damage die (Fire)."
+      },
+      "upgrades_note": null,
+      "raw_text": "FIRE FINGERS\n“Fire Fingers activated. Try not to make it weird.”\nAttack, Fire\nMana Cost: 3\nRange: Melee\nAI Favor: 1\nBrilliant flame leaps from your fingers.\nBase Damage: 1d4 + Int Fire\nUPGRADES\nRank 5: +1d4 base damage.\nRank 10: +1d4 base damage, and the target gains the\nBurned Debuff.\nRank 15: +1d4 base damage, and your hands begin to\nintermittently burn. Your Pugilism, Unarmed Combat,\nand Slice Attack strikes add 1 Fire Fingers Rank dam‑\nage die (Fire).",
+      "source": {
+        "pdf_pages": [
+          207,
+          207
+        ],
+        "printed_pages": [
+          205,
+          205
+        ]
+      }
+    },
+    {
+      "id": "frost-scar",
+      "name": "Frost Scar",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Frigid status achieved; relationships may suffer.”",
+      "tags_raw": "Attack, Ice",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Ice"
+      ],
+      "mana_cost": "2",
+      "range": "Melee",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "1",
+      "limitations": null,
+      "base_damage": "1d4 + Int Ice",
+      "description": "With a slice of your frigid hand, you leave a scar of rime on your target.",
+      "upgrades": {
+        "5": "+1d4 base damage, and the target cannot heal themselves in the next combat round.",
+        "10": "+1d4 base damage, and the target gains the Stiff Legs Debuff.",
+        "15": "+1d4 base damage, and the target gains The Taint Debuff."
+      },
+      "upgrades_note": null,
+      "raw_text": "FROST SCAR\n“Frigid status achieved; relationships may suffer.”\nAttack, Ice\nMana Cost: 2\nRange: Melee\nAI Favor: 1\nWith a slice of your frigid hand, you leave a scar of\nrime on your target.\nBase Damage: 1d4 + Int Ice\nUPGRADES\nRank 5: +1d4 base damage, and the target cannot\nheal themselves in the next combat round.\nRank 10: +1d4 base damage, and the target gains the\nStiff Legs Debuff.\nRank 15: +1d4 base damage, and the target gains The\nTaint Debuff.",
+      "source": {
+        "pdf_pages": [
+          207,
+          207
+        ],
+        "printed_pages": [
+          205,
+          205
+        ]
+      }
+    },
+    {
+      "id": "grand-illusion",
+      "name": "Grand Illusion",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Why, yes, that is my pet T-Rex.”",
+      "tags_raw": "Intelligence",
+      "stat": "Intelligence",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "other",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "7",
+      "range": "40 feet",
+      "duration": "2 minutes",
+      "cooldown": "15 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You create an illusion that might trick your foes. Make a single Int-Opposed Spell Check vs. foes who can see it. Your same roll is used against foes who see it even after the casting round.\n\nMundane illusions seeking only to impress might be rolled with Advantage, while complex illusions seeking a specific response or images that suddenly pop up during combat might be rolled with Disadvantage (GM’s discretion).\n\nOn Success, they believe your illusion.",
+      "upgrades": {
+        "5": "Those who believe gain the Woozy Debuff or similar based on the desired response.",
+        "10": "Those who believe also gain the Queasy Debuff or similar based on the desired response.",
+        "15": "Those who believe also gain the Shocked Debuff or similar based on the desired response."
+      },
+      "upgrades_note": null,
+      "raw_text": "GRAND ILLUSION\n“Why, yes, that is my pet T-Rex.”\nIntelligence\nMana Cost: 7\nRange: 40 feet\nDuration: 2 minutes\nCooldown: 15 minutes\nYou create an illusion that might trick your foes.\nMake a single Int-Opposed Spell Check vs. foes who\ncan see it. Your same roll is used against foes who see\nit even after the casting round.\nMundane illusions seeking only to impress might be\nrolled with Advantage, while complex illusions seek‑\ning a specific response or images that suddenly pop\nup during combat might be rolled with Disadvantage\n(GM’s discretion).\nOn Success, they believe your illusion.\nUPGRADES\nRank 5: Those who believe gain the Woozy Debuff or\nsimilar based on the desired response.\nRank 10: Those who believe also gain the Queasy\nDebuff or similar based on the desired response.\nRank 15: Those who believe also gain the Shocked\nDebuff or similar based on the desired response.",
+      "source": {
+        "pdf_pages": [
+          207,
+          208
+        ],
+        "printed_pages": [
+          205,
+          206
+        ]
+      }
+    },
+    {
+      "id": "heal",
+      "name": "Heal",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Congratulations on not dying… yet.”",
+      "tags_raw": "Heal, Interrupt, Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "2",
+      "range": "Self only",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "Rank 1 maximum",
+      "base_damage": null,
+      "description": "Heal 2 Health Bar slots.",
+      "upgrades": {},
+      "upgrades_note": "None",
+      "raw_text": "HEAL\n“Congratulations on not dying… yet.”\nHeal, Interrupt, Passive\nMana Cost: 2\nRange: Self only\nLimitations: Rank 1 maximum\nHeal 2 Health Bar slots.\nUPGRADES\nNone",
+      "source": {
+        "pdf_pages": [
+          208,
+          208
+        ],
+        "printed_pages": [
+          206,
+          206
+        ]
+      }
+    },
+    {
+      "id": "heal-critter",
+      "name": "Heal Critter",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Your pet has been restored to maximum cuddle capacity.”",
+      "tags_raw": "Heal, Interrupt, Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "8",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "May only be cast on pets and minions (sorry, Donut).",
+      "base_damage": null,
+      "description": "The target glows as they heal back to 100% Health Bar.",
+      "upgrades": {
+        "5": "The target mends a Minor Injury Debuff.",
+        "10": "The target mends a Major Injury Debuff.",
+        "15": "The target regrows all lost appendages."
+      },
+      "upgrades_note": null,
+      "raw_text": "HEAL CRITTER\n“Your pet has been restored to\nmaximum cuddle capacity.”\nHeal, Interrupt, Passive\nMana Cost: 8\nRange: 30 feet\nLimitations: May only be cast on\npets and minions (sorry, Donut).\nThe target glows as they heal\nback to 100% Health Bar.\nUPGRADES\nRank 5: The target mends a\nMinor Injury Debuff.\nRank 10: The target mends\na Major Injury Debuff.\nRank 15: The target\nregrows all lost appendages.",
+      "source": {
+        "pdf_pages": [
+          208,
+          208
+        ],
+        "printed_pages": [
+          206,
+          206
+        ]
+      }
+    },
+    {
+      "id": "heal-others",
+      "name": "Heal Others",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Tell me you’re a Cleric without…”",
+      "tags_raw": "Heal, Interrupt, Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "6",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "You can’t cast this Spell on yourself, pets, or minions.",
+      "base_damage": null,
+      "description": "A wave of positive vibes engulfs the target. They heal 1d4 Health Bar slots.",
+      "upgrades": {
+        "5": "The target heals 1d6 Health Bar slots.",
+        "10": "The target heals 2d6 Health Bar slots.",
+        "15": "Instead of a single target, all party members within a 20ft Burst radius are healed."
+      },
+      "upgrades_note": null,
+      "raw_text": "HEAL OTHERS\n“Tell me you’re a Cleric without…”\nHeal, Interrupt, Passive\nMana Cost: 6\nRange: 30 feet\nLimitations: You can’t cast this Spell on yourself,\npets, or minions.\nA wave of positive vibes engulfs the target. They heal\n1d4 Health Bar slots.\nUPGRADES\nRank 5: The target heals 1d6 Health Bar slots.\nRank 10: The target heals 2d6 Health Bar slots.\nRank 15: Instead of a single target, all party members\nwithin a 20ft Burst radius are healed.",
+      "source": {
+        "pdf_pages": [
+          208,
+          208
+        ],
+        "printed_pages": [
+          206,
+          206
+        ]
+      }
+    },
+    {
+      "id": "heal-self",
+      "name": "Heal Self",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Way easier than manually shoving your guts back in!”",
+      "tags_raw": "Heal, Interrupt, Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "1",
+      "range": "Self only",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "You can only case this Spell on yourself.",
+      "base_damage": null,
+      "description": "You center yourself, using magic to make yourself whole. You heal 1d4 Health Bar slots.",
+      "upgrades": {
+        "5": "You heal 1d6 Health Bar slots and mend a Minor Injury, Poison, or Disease Debuff.",
+        "10": "You heal 2d6 Health Bar slots and mend a Major Injury or other Debuff.",
+        "15": "You heal to full and gain the benefits of a short rest."
+      },
+      "upgrades_note": null,
+      "raw_text": "HEAL SELF\n“Way easier than manually shoving your guts back in!”\nHeal, Interrupt, Passive\nMana Cost: 1\nRange: Self only\nLimitations: You can only case this Spell on yourself.\nYou center yourself, using magic to make yourself\nwhole. You heal 1d4 Health Bar slots.\nUPGRADES\nRank 5: You heal 1d6 Health Bar slots and mend a\nMinor Injury, Poison, or Disease Debuff.\nRank 10: You heal 2d6 Health Bar slots and\nmend a Major Injury or other Debuff.\nRank 15: You heal to full and gain the\nbenefits of a short rest.",
+      "source": {
+        "pdf_pages": [
+          208,
+          208
+        ],
+        "printed_pages": [
+          206,
+          206
+        ]
+      }
+    },
+    {
+      "id": "hole",
+      "name": "Hole",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“It’s a hole. This will absolutely be misused.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "12",
+      "range": "10 feet",
+      "duration": "Until the end of the combat or 5 minutes.",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "Can’t be used on saferoom doors or living things.",
+      "base_damage": null,
+      "description": "You create a temporary cylindrical hole in a surface or material within range, to a depth of 1 inch per Spell Rank and a diameter of 2ft. Anything that can fit in the hole can pass through it if the hole is deep enough to penetrate to the other side of the surface.",
+      "upgrades": {
+        "5": "You can reduce the diameter of the hole to a smaller size when cast.",
+        "10": "You can widen the hole’s diameter by 1 inch for every inch of depth you sacrifice when cast.",
+        "15": "The caster may end the spell with a thought (like an Interrupt, but it doesn’t cost an Action). Anything in the hole at that time is destroyed."
+      },
+      "upgrades_note": null,
+      "raw_text": "HOLE\n“It’s a hole. This will\nabsolutely be misused.”\nPassive\nMana Cost: 12\nRange: 10 feet\nDuration: Until the end of the\ncombat or 5 minutes.\nLimitations: Can’t be used\non saferoom doors or\nliving things.\nYou create a temporary cylindrical hole in a surface\nor material within range, to a depth of 1 inch per Spell\nRank and a diameter of 2ft. Anything that can fit in the\nhole can pass through it if the hole is deep enough to\npenetrate to the other side of the surface.\nUPGRADES\nRank 5: You can reduce the diameter of the hole to a\nsmaller size when cast.\nRank 10: You can widen the hole’s diameter by 1 inch\nfor every inch of depth you sacrifice when cast.\nRank 15: The caster may end the spell with a thought\n(like an Interrupt, but it doesn’t cost an Action). Any‑\nthing in the hole at that time is destroyed.",
+      "source": {
+        "pdf_pages": [
+          208,
+          209
+        ],
+        "printed_pages": [
+          206,
+          207
+        ]
+      }
+    },
+    {
+      "id": "holy-aura",
+      "name": "Holy Aura",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Look who’s all high and mighty.”",
+      "tags_raw": "Attack, Holy, Area of Effect, Charisma, Favored: Cleric & Paladin",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Cleric",
+        "Paladin"
+      ],
+      "damage_types": [
+        "Holy"
+      ],
+      "mana_cost": "7",
+      "range": "5ft Burst radius",
+      "duration": null,
+      "cooldown": "Once per round",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d4 + Cha Holy, 5ft Burst radius",
+      "description": "You channel your deity and emanate their essence to hurt only the enemies around you.",
+      "upgrades": {
+        "5": "+1d4 base damage, and affected undead Mobs take double damage.",
+        "10": "+1d4 base damage and +5ft Burst radius.",
+        "15": "+1d4 base damage and +5ft Burst radius."
+      },
+      "upgrades_note": null,
+      "raw_text": "HOLY AURA\n“Look who’s all high and mighty.”\nAttack, Holy, Area of Effect, Charisma, Favored: Cleric &\nPaladin\nMana Cost: 7\nRange: 5ft Burst radius\nCooldown: Once per round\nYou channel your deity and emanate their essence to\nhurt only the enemies around you.\nBase Damage: 1d4 + Cha Holy, 5ft Burst radius\nUPGRADES\nRank 5: +1d4 base damage, and affected undead\nMobs take double damage.\nRank 10: +1d4 base damage and +5ft Burst radius.\nRank 15: +1d4 base damage and +5ft Burst radius.",
+      "source": {
+        "pdf_pages": [
+          209,
+          209
+        ],
+        "printed_pages": [
+          207,
+          207
+        ]
+      }
+    },
+    {
+      "id": "hot-stuff-aura",
+      "name": "Hot Stuff Aura",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Bask in the warm glow of my machismo!”",
+      "tags_raw": "Passive, Area of Effect, Favored: Bard",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [
+        "Bard"
+      ],
+      "damage_types": [],
+      "mana_cost": "8",
+      "range": "5ft Burst radius",
+      "duration": "2 rounds",
+      "cooldown": "5 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You create a shield of pure sex appeal around you against all damage types with a number of Health Bar slots equal to your Cha Mod, and a 2 in each slot. It also protects all allies within the radius. When depleted, it disappears. These slots cannot be healed.",
+      "upgrades": {
+        "5": "Increase the Health to 4 in each slot.",
+        "10": "+5ft Burst radius, with a 6 in each slot.",
+        "15": "+10ft Burst radius, with a 8 in each slot."
+      },
+      "upgrades_note": null,
+      "raw_text": "HOT STUFF AURA\n“Bask in the warm glow of my machismo!”\nPassive, Area of Effect, Favored: Bard\nMana Cost: 8\nRange: 5ft Burst radius\nDuration: 2 rounds\nCooldown: 5 minutes\nYou create a shield of pure sex appeal around you\nagainst all damage types with a number of Health Bar\nslots equal to your Cha Mod, and a 2 in each slot. It\nalso protects all allies within the radius. When deplet‑\ned, it disappears. These slots cannot be healed.\nUPGRADES\nRank 5: Increase the Health to 4 in each slot.\nRank 10: +5ft Burst radius, with a 6 in each slot.\nRank 15: +10ft Burst radius, with a 8 in each slot.",
+      "source": {
+        "pdf_pages": [
+          209,
+          209
+        ],
+        "printed_pages": [
+          207,
+          207
+        ]
+      }
+    },
+    {
+      "id": "ice-blast",
+      "name": "Ice Blast",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Hope they brought a jacket.”",
+      "tags_raw": "Attack, Ice",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Ice"
+      ],
+      "mana_cost": "9",
+      "range": "40 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d8 + Int Ice",
+      "description": "With the howl of blizzard winds, you let loose a compact pocket of freezing cold and ice.",
+      "upgrades": {
+        "5": "+1d8 base damage.",
+        "10": "+1d8 base damage, and the target is pushed 10 feet away from you.",
+        "15": "+1d8 base damage, and you can change the range to a 15ft Cone Attack."
+      },
+      "upgrades_note": null,
+      "raw_text": "ICE BLAST\n“Hope they brought a jacket.”\nAttack, Ice\nMana Cost: 9\nRange: 40 feet\nWith the howl of blizzard winds, you let loose a com‑\npact pocket of freezing cold and ice.\nBase Damage: 1d8 + Int Ice\nUPGRADES\nRank 5: +1d8 base damage.\nRank 10: +1d8 base damage, and the target is pushed\n10 feet away from you.\nRank 15: +1d8 base damage, and you can change the\nrange to a 15ft Cone Attack.",
+      "source": {
+        "pdf_pages": [
+          209,
+          209
+        ],
+        "printed_pages": [
+          207,
+          207
+        ]
+      }
+    },
+    {
+      "id": "icicles",
+      "name": "Icicles",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Did you know that icicles are the #1 cause of home head impalements?”",
+      "tags_raw": "Attack, Ice",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Ice"
+      ],
+      "mana_cost": "19",
+      "range": "60 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d12 + Int Ice",
+      "description": "Seizing upon the ice that runs through your veins, icicle projectiles shoot forth from your palms towards distant foes.",
+      "upgrades": {
+        "5": "+1d12 base damage.",
+        "10": "+1d12 base damage, and the target gains the Stiff Legs Debuff.",
+        "15": "+1d12 base damage, and the damage is Armor-Piercing."
+      },
+      "upgrades_note": null,
+      "raw_text": "ICICLES\n“Did you know that icicles are the #1 cause of home\nhead impalements?”\nAttack, Ice\nMana Cost: 19\nRange: 60 feet\nSeizing upon the ice that runs through your veins,\nicicle projectiles shoot forth from your palms towards\ndistant foes.\nBase Damage: 1d12 + Int Ice\nUPGRADES\nRank 5: +1d12 base damage.\nRank 10: +1d12 base damage, and the target gains\nthe Stiff Legs Debuff.\nRank 15: +1d12 base damage, and the damage is\nArmor-Piercing.",
+      "source": {
+        "pdf_pages": [
+          209,
+          209
+        ],
+        "printed_pages": [
+          207,
+          207
+        ]
+      }
+    },
+    {
+      "id": "intimate-touches",
+      "name": "Intimate Touches",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Show me on the doll where they healed you.”",
+      "tags_raw": "Heal, Passive, Favored: Cleric & Paladin",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [
+        "Cleric",
+        "Paladin"
+      ],
+      "damage_types": [],
+      "mana_cost": "8",
+      "range": "5 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": "Unlike most healing, this spell is not an Interrupt.",
+      "base_damage": null,
+      "description": "You lay hands on the target (which could be you), who heals Health Bar slots equal to your Cha Mod.",
+      "upgrades": {
+        "5": "The target also heals a Minor Injury Debuff.",
+        "10": "The target also heals a Major Injury Debuff.",
+        "15": "The target also heals all Poison & Disease Debuffs."
+      },
+      "upgrades_note": null,
+      "raw_text": "INTIMATE TOUCHES\n“Show me on the doll where they healed you.”\nHeal, Passive, Favored: Cleric & Paladin\nMana Cost: 8\nRange: 5 feet\nLimitations: Unlike most healing, this spell is not an\nInterrupt.\nYou lay hands on the target (which could be you), who\nheals Health Bar slots equal to your Cha Mod.\nUPGRADES\nRank 5: The target also heals a Minor Injury Debuff.\nRank 10: The target also heals a Major Injury Debuff.\nRank 15: The target also heals all Poison & Disease\nDebuffs.",
+      "source": {
+        "pdf_pages": [
+          210,
+          210
+        ],
+        "printed_pages": [
+          208,
+          208
+        ]
+      }
+    },
+    {
+      "id": "lightning-bolt",
+      "name": "Lightning Bolt",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Bolt released, viewership spike detected.”",
+      "tags_raw": "Attack, Electric",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Electric"
+      ],
+      "mana_cost": "15",
+      "range": "100 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d10 + Int Electric",
+      "description": "With a thunderous clap, you let loose a bolt of lightning.",
+      "upgrades": {
+        "5": "+1d10 base damage.",
+        "10": "+1d10 base damage and becomes a 100ft Line Attack.",
+        "15": "+1d10 base damage. The lightning bolt forks, and you may choose to apply your Attack against any number of additional targets within 15 feet of the previous target (within the range limit). Each successful Attack (including against the primary target), deals half damage."
+      },
+      "upgrades_note": null,
+      "raw_text": "LIGHTNING BOLT\n“Bolt released, viewership spike detected.”\nAttack, Electric\nMana Cost: 15\nRange: 100 feet\nWith a thunderous clap, you let loose a bolt of lightning.\nBase Damage: 1d10 + Int Electric\nUPGRADES\nRank 5: +1d10 base damage.\nRank 10: +1d10 base damage and becomes a 100ft\nLine Attack.\nRank 15: +1d10 base damage. The lightning bolt\nforks, and you may choose to apply your Attack\nagainst any number of additional targets within 15\nfeet of the previous target (within the range limit).\nEach successful Attack (including against the primary\ntarget), deals half damage.",
+      "source": {
+        "pdf_pages": [
+          210,
+          210
+        ],
+        "printed_pages": [
+          208,
+          208
+        ]
+      }
+    },
+    {
+      "id": "magic-missile",
+      "name": "Magic Missile",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Standard Spell detected. Viewers appreciate the nostalgia.”",
+      "tags_raw": "Attack, Force",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Force"
+      ],
+      "mana_cost": "5",
+      "range": "Within your line of sight",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "1",
+      "limitations": null,
+      "base_damage": "1d4 + Int Force",
+      "description": "From glowing eyes, fingers, or whatever, a streak of pure force shoots out.",
+      "upgrades": {
+        "5": "+1d4 base damage, and you can cast the Spell at a higher or lower Mana cost. 3 Mana: −4 damage 4 Mana: −2 damage 6 Mana: Add 1 Rank damage die",
+        "10": "+1d4 base damage, and the missiles deal Force and Fire damage. The target gains the Burned Debuff.",
+        "15": "This attack deals base damage ×3."
+      },
+      "upgrades_note": null,
+      "raw_text": "MAGIC MISSILE\n“Standard Spell detected. Viewers appreciate the\nnostalgia.”\nAttack, Force\nMana Cost: 5\nRange: Within your line of sight\nAI Favor: 1\nFrom glowing eyes, fingers, or whatever, a streak of\npure force shoots out.\nBase Damage: 1d4 + Int Force\nUPGRADES\nRank 5: +1d4 base damage, and you can cast the\nSpell at a higher or lower Mana cost.\n3 Mana: −4 damage\n4 Mana: −2 damage\n6 Mana: Add 1 Rank damage die\nRank 10: +1d4 base damage, and the missiles deal\nForce and Fire damage. The target gains the Burned\nDebuff.\nRank 15: This attack deals base damage ×3.",
+      "source": {
+        "pdf_pages": [
+          210,
+          210
+        ],
+        "printed_pages": [
+          208,
+          208
+        ]
+      }
+    },
+    {
+      "id": "mind-tickle",
+      "name": "Mind Tickle",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Don’t think of an elephant.”",
+      "tags_raw": "Attack, Psychic, Charisma, Favored: Cleric",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Cleric"
+      ],
+      "damage_types": [
+        "Psychic"
+      ],
+      "mana_cost": "2",
+      "range": "40 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "2",
+      "limitations": null,
+      "base_damage": "1d2 + Cha Psychic",
+      "description": "You infect your target with a small headache.",
+      "upgrades": {
+        "5": "+1d2 base damage.",
+        "10": "+1d2 base damage, and the target gains the Sore as Shit Debuff.",
+        "15": "+1d2 base damage, and the target gains the Muted Debuff."
+      },
+      "upgrades_note": null,
+      "raw_text": "MIND TICKLE\n“Don’t think of an elephant.”\nAttack, Psychic, Charisma, Favored: Cleric\nMana Cost: 2\nRange: 40 feet\nAI Favor: 2\nYou infect your target with a small headache.\nBase Damage: 1d2 + Cha Psychic\nUPGRADES\nRank 5: +1d2 base damage.\nRank 10: +1d2 base damage, and the target gains the\nSore as Shit Debuff.\nRank 15: +1d2 base damage, and the target gains the\nMuted Debuff.",
+      "source": {
+        "pdf_pages": [
+          210,
+          210
+        ],
+        "printed_pages": [
+          208,
+          208
+        ]
+      }
+    },
+    {
+      "id": "minion-army",
+      "name": "Minion Army",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“No army can triumph when subjected to internecine conflict.”",
+      "tags_raw": "Intelligence, Area of Effect, Mind Control",
+      "stat": "Intelligence",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "other",
+      "favored_classes": [],
+      "damage_types": [
+        "Mind Control"
+      ],
+      "mana_cost": "50",
+      "range": "50ft Burst radius",
+      "duration": "2 minutes",
+      "cooldown": "5 hours",
+      "ai_favor": null,
+      "limitations": "5-minute casting time, and the caster cannot move while casting. Only works against Mobs with an Intelligence of 2+.",
+      "base_damage": null,
+      "description": "When you cast this spell, choose a target within range. On a Standard Success, 1 in 50 Mobs in the affected area (min 1) become an ally and fight for you without needing to command them. Higher levels of success can turn additional Mobs into allies (GM’s discretion).",
+      "upgrades": {
+        "5": "The casting time is 4 minutes. Duration is 5 minutes.",
+        "10": "Add your Charisma Stat to the Burst radius. Duration is 10 minutes.",
+        "15": "Add your Charisma Stat to the Burst radius. Duration is 15 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "MINION ARMY\n“No army can triumph when subjected to\ninternecine conflict.”\nIntelligence, Area of Effect, Mind Control\nMana Cost: 50\nRange: 50ft Burst radius\nDuration: 2 minutes\nCooldown: 5 hours\nLimitations: 5-minute casting time, and the caster\ncannot move while casting. Only works against Mobs\nwith an Intelligence of 2+.\nWhen you cast this spell, choose a target within range.\nOn a Standard Success, 1 in 50 Mobs in the affected\narea (min 1) become an ally and fight for you without\nneeding to command them. Higher levels of success\ncan turn additional Mobs into allies (GM’s discretion).\nUPGRADES\nRank 5: The casting time is 4 minutes. Duration is 5\nminutes.\nRank 10: Add your Charisma Stat to the Burst radius.\nDuration is 10 minutes.\nRank 15: Add your Charisma Stat to the Burst radius.\nDuration is 15 minutes.",
+      "source": {
+        "pdf_pages": [
+          211,
+          211
+        ],
+        "printed_pages": [
+          209,
+          209
+        ]
+      }
+    },
+    {
+      "id": "natures-breath",
+      "name": "Nature’s Breath",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“This recycled dungeon air is bad for my complexion.”",
+      "tags_raw": "Heal, Interrupt, Passive, Favored: Druid",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "heal",
+      "favored_classes": [
+        "Druid"
+      ],
+      "damage_types": [],
+      "mana_cost": "6",
+      "range": "5 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You blow cool, fresh air over the target’s wounds (could be yourself), healing them. Roll a Nature’s Breath Rank damage die. That is how many Health Bar slots the target heals. May also target pets and minions.",
+      "upgrades": {
+        "5": "Add 1 to your die roll.",
+        "10": "Add 1 to your die roll, and remove a Minor Injury Debuff.",
+        "15": "Add 1 to your die roll, and remove a Major Injury Debuff."
+      },
+      "upgrades_note": null,
+      "raw_text": "NATURE’S BREATH\n“This recycled dungeon air is bad for my\ncomplexion.”\nHeal, Interrupt, Passive, Favored: Druid\nMana Cost: 6\nRange: 5 feet\nYou blow cool, fresh air over the target’s wounds (could\nbe yourself), healing them. Roll a Nature’s Breath Rank\ndamage die. That is how many Health Bar slots the\ntarget heals. May also target pets and minions.\nUPGRADES\nRank 5: Add 1 to your die roll.\nRank 10: Add 1 to your die roll, and remove a Minor\nInjury Debuff.\nRank 15: Add 1 to your die roll, and remove a Major\nInjury Debuff.",
+      "source": {
+        "pdf_pages": [
+          211,
+          211
+        ],
+        "printed_pages": [
+          209,
+          209
+        ]
+      }
+    },
+    {
+      "id": "oakhide",
+      "name": "Oakhide",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“My bark is worse than my bite.”",
+      "tags_raw": "Passive, Favored: Druid",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [
+        "Druid"
+      ],
+      "damage_types": [],
+      "mana_cost": "5",
+      "range": "Self",
+      "duration": "2 minutes",
+      "cooldown": "10 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Your skin turns into solid wood, giving you great protection. You have +2 Damage Resistance for the duration of this spell.",
+      "upgrades": {
+        "5": "+2 DR. Duration is 3 minutes.",
+        "10": "+2 DR. You may target party members and NPCs up to 10 feet away with this spell.",
+        "15": "+2 DR. Duration is 4 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "OAKHIDE\n“My bark is worse than my bite.”\nPassive, Favored: Druid\nMana Cost: 5\nRange: Self\nDuration: 2 minutes\nCooldown: 10 minutes\nYour skin turns into solid wood, giving you great\nprotection. You have +2 Damage Resistance for the\nduration of this spell.\nUPGRADES\nRank 5: +2 DR. Duration is 3 minutes.\nRank 10: +2 DR. You may target party members and\nNPCs up to 10 feet away with this spell.\nRank 15: +2 DR. Duration is 4 minutes.",
+      "source": {
+        "pdf_pages": [
+          211,
+          211
+        ],
+        "printed_pages": [
+          209,
+          209
+        ]
+      }
+    },
+    {
+      "id": "paladins-smite",
+      "name": "Paladin’s Smite",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Repent or die!”",
+      "tags_raw": "Attack, Holy, Charisma, Favored: Paladin",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Paladin"
+      ],
+      "damage_types": [
+        "Holy"
+      ],
+      "mana_cost": "11",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d8 + Cha Holy",
+      "description": "You channel a torrent of divine wrath toward a soon-to-be repentant foe.",
+      "upgrades": {
+        "5": "+1d8 base damage.",
+        "10": "+1d8 base damage, and the target gains the Take Down Debuff.",
+        "15": "+1d8 base damage, and the damage is Armor-Piercing (ignores DR)."
+      },
+      "upgrades_note": null,
+      "raw_text": "PALADIN’S SMITE\n“Repent or die!”\nAttack, Holy, Charisma, Favored: Paladin\nMana Cost: 11\nRange: 30 feet\nYou channel a torrent of divine wrath toward a soon-\nto-be repentant foe.\nBase Damage: 1d8 + Cha Holy\nUPGRADES\nRank 5: +1d8 base damage.\nRank 10: +1d8 base damage, and the target gains the\nTake Down Debuff.\nRank 15: +1d8 base damage, and the damage is Ar‑\nmor-Piercing (ignores DR).",
+      "source": {
+        "pdf_pages": [
+          211,
+          211
+        ],
+        "printed_pages": [
+          209,
+          209
+        ]
+      }
+    },
+    {
+      "id": "panty-dropper",
+      "name": "Panty Dropper",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“You know what’s on the menu? Me-n-u.”",
+      "tags_raw": "Charisma, Mind Control, Favored: Bard",
+      "stat": "Charisma",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "other",
+      "favored_classes": [
+        "Bard"
+      ],
+      "damage_types": [
+        "Mind Control"
+      ],
+      "mana_cost": "10",
+      "range": "10 feet",
+      "duration": "2 minutes or until you finish",
+      "cooldown": "5 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Make an Int-Opposed Spell Check against a non-Boss target, even in combat. Fighting’s just another form of penetration, after all. On Success, the target wants to jump your bones and won’t let anyone stop them (they cease attacking or doing other things).",
+      "upgrades": {
+        "5": "The duration is 5 minutes.",
+        "10": "The duration is 10 minutes.",
+        "15": "The duration is 15 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "PANTY DROPPER\n“You know what’s on the menu? Me-n-u.”\nCharisma, Mind Control, Favored: Bard\nMana Cost: 10\nRange: 10 feet\nDuration: 2 minutes or until you finish\nCooldown: 5 minutes\nMake an Int-Opposed Spell Check against a non-Boss\ntarget, even in combat. Fighting’s just another form of\npenetration, after all.\nOn Success, the target wants to jump your bones and\nwon’t let anyone stop them (they cease attacking or\ndoing other things).\nUPGRADES\nRank 5: The duration is 5 minutes.\nRank 10: The duration is 10 minutes.\nRank 15: The duration is 15 minutes.",
+      "source": {
+        "pdf_pages": [
+          211,
+          212
+        ],
+        "printed_pages": [
+          209,
+          210
+        ]
+      }
+    },
+    {
+      "id": "ping",
+      "name": "Ping",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Here piggy, piggy.”",
+      "tags_raw": "Passive, Area of Effect",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "5",
+      "range": "1 mile Burst radius",
+      "duration": null,
+      "cooldown": "5 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Sends out an audible ping that gives the distance and location of all non-crawlers and non-red-tagged Mobs in a circle around you. It will mark targets beyond the range of your map. You receive information about the Mobs that is “somewhat complete.”\n\nTargets hit with Ping will hear an audible ping noise, but they will not know where the ping originated. Environmental factors and obstacles may increase or decrease range.",
+      "upgrades": {
+        "5": "If you know the Fear Spell (see p. 204), you may cast it at no Action cost to affect all eligible Mobs within the Ping range. You only pay the Mana.",
+        "10": "Environmental factors and obstacles no longer decrease the range, and you receive “mostly complete” information.",
+        "15": "You pay no Mana to add the Fear Spell, and you receive “entirely complete” information."
+      },
+      "upgrades_note": null,
+      "raw_text": "PING\n“Here piggy, piggy.”\nPassive, Area of Effect\nMana Cost: 5\nRange: 1 mile Burst radius\nCooldown: 5 minutes\nSends out an audible ping that gives the distance and\nlocation of all non-crawlers and non-red-tagged Mobs\nin a circle around you. It will mark targets beyond the\nrange of your map. You receive information about the\nMobs that is “somewhat complete.”\nTargets hit with Ping will hear an audible ping noise,\nbut they will not know where the ping originated.\nEnvironmental factors and obstacles may increase or\ndecrease range.\nUPGRADES\nRank 5: If you know the Fear Spell (see p. 204), you\nmay cast it at no Action cost to affect all eligible Mobs\nwithin the Ping range. You only pay the Mana.\nRank 10: Environmental factors and obstacles no\nlonger decrease the range, and you receive “mostly\ncomplete” information.\nRank 15: You pay no Mana to add the Fear Spell, and\nyou receive “entirely complete” information.",
+      "source": {
+        "pdf_pages": [
+          212,
+          212
+        ],
+        "printed_pages": [
+          210,
+          210
+        ]
+      }
+    },
+    {
+      "id": "protective-shell",
+      "name": "Protective Shell",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Hope activated. Try not to waste it.”",
+      "tags_raw": "Interrupt, Passive, Area of Effect",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "None",
+      "range": "10ft Burst radius",
+      "duration": "5 seconds (only long enough to push foes away and protect against a single physical attack)",
+      "cooldown": "30 hours",
+      "ai_favor": null,
+      "limitations": "Spell must be imbued onto something you are wearing. The shell cannot be moved by any means.",
+      "base_damage": null,
+      "description": "You create a 10 + Int-foot Burst radius magic shell around yourself and nearby party members.\n\nThis shell pushes away all Mobs in its Area, which is the shell’s radius + 5ft. Mobs cannot enter the shell (unless non-corporeal) or physically attack those inside. The shell does not protect against magic effects. Crawlers inside may attack as usual.",
+      "upgrades": {
+        "5": "Duration is 10 seconds. In addition to knocking enemies away, it protects the occupants from all non-Spell attacks originating from outside the shell until the end of the current combat round.",
+        "10": "Duration is 20 seconds or two rounds.",
+        "15": "Duration is 30 seconds or three rounds."
+      },
+      "upgrades_note": null,
+      "raw_text": "PROTECTIVE SHELL\n“Hope activated. Try not to waste it.”\nInterrupt, Passive, Area of Effect\nMana Cost: None\nRange: 10ft Burst radius\nDuration: 5 seconds (only long enough to push foes\naway and protect against a single physical attack)\nCooldown: 30 hours\nLimitations: Spell must be imbued onto something\nyou are wearing. The shell cannot be moved by any\nmeans.\nYou create a 10 + Int-foot Burst radius magic shell\naround yourself and nearby party members.\nThis shell pushes away all Mobs in its Area, which is\nthe shell’s radius + 5ft. Mobs cannot enter the shell\n(unless non-corporeal) or physically attack those in‑\nside. The shell does not protect against magic effects.\nCrawlers inside may attack as usual.\nUPGRADES\nRank 5: Duration is 10 seconds. In addition to knock‑\ning enemies away, it protects the occupants from all\nnon-Spell attacks originating from outside the shell\nuntil the end of the current combat round.\nRank 10: Duration is 20 seconds or two rounds.\nRank 15: Duration is 30 seconds or three rounds.",
+      "source": {
+        "pdf_pages": [
+          212,
+          212
+        ],
+        "printed_pages": [
+          210,
+          210
+        ]
+      }
+    },
+    {
+      "id": "puddle-jumper",
+      "name": "Puddle Jumper",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Teleportation doesn’t suck.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "20",
+      "range": "Line-of-sight to the destination surface",
+      "duration": null,
+      "cooldown": "5 hours",
+      "ai_favor": null,
+      "limitations": "There is a 10-second delay before the effect takes place.",
+      "base_damage": null,
+      "description": "You and up to 3 party members of your choice teleport to another location. Everyone feels a tingling sensation while waiting for the effect to resolve.",
+      "upgrades": {
+        "5": "The delay is 2 seconds, and the destination doesn’t have to be a surface.",
+        "10": "The delay is 1 second, and the destination can be anywhere within 1,000 yards in any direction, even if the exact destination cannot be seen.",
+        "15": "There is no delay, and the destination can be anywhere within 1 mile in any direction, even if the exact destination cannot be seen."
+      },
+      "upgrades_note": null,
+      "raw_text": "PUDDLE JUMPER\n“Teleportation doesn’t suck.”\nPassive\nMana Cost: 20\nRange: Line-of-sight to the destination surface\nLimitations: There is a 10-second delay before the\neffect takes place.\nCooldown: 5 hours\nYou and up to 3 party members of your choice teleport\nto another location. Everyone feels a tingling sensation\nwhile waiting for the effect to resolve.\nUPGRADES\nRank 5: The delay is 2 seconds, and the destination\ndoesn’t have to be a surface.\nRank 10: The delay is 1 second, and the destination\ncan be anywhere within 1,000 yards in any direction,\neven if the exact destination cannot be seen.\nRank 15: There is no delay, and the destination can\nbe anywhere within 1 mile in any direction, even if the\nexact destination cannot be seen.",
+      "source": {
+        "pdf_pages": [
+          212,
+          213
+        ],
+        "printed_pages": [
+          210,
+          211
+        ]
+      }
+    },
+    {
+      "id": "rise-dead-minion",
+      "name": "Rise, Dead Minion!",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“The bigger they are, the deeper they’re buried.”",
+      "tags_raw": "Attack, Favored: Necromancer",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Necromancer"
+      ],
+      "damage_types": [],
+      "mana_cost": "10",
+      "range": "30 feet",
+      "duration": "1 round",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "At your command, a Medium (4) size skeleton emerges from the ground to attack your foe in melee combat, dealing 1d8 + Int Necrotic damage. After the Attack, the skeleton collapses, creating difficult terrain in the space it occupied.",
+      "upgrades": {
+        "5": "The skeleton attacks twice before collapsing.",
+        "10": "The skeleton increases to size Large (5), and its Attack range is 10 feet. +1d8 base damage.",
+        "15": "The skeleton increases to size Colossal (7), and its Attack range is 15 feet. Add one Rise, Dead Minion! Rank damage die to the damage."
+      },
+      "upgrades_note": null,
+      "raw_text": "RISE, DEAD MINION!\n“The bigger they are, the deeper they’re buried.”\nAttack, Favored: Necromancer\nMana Cost: 10\nRange: 30 feet\nDuration: 1 round\nAt your command, a Medium (4) size skeleton emerges\nfrom the ground to attack your foe in melee combat,\ndealing 1d8 + Int Necrotic damage. After the Attack,\nthe skeleton collapses, creating difficult terrain in the\nspace it occupied.\nUPGRADES\nRank 5: The skeleton attacks twice before collapsing.\nRank 10: The skeleton increases to size Large (5), and\nits Attack range is 10 feet. +1d8 base damage.\nRank 15: The skeleton increases to size Colossal (7),\nand its Attack range is 15 feet. Add one Rise, Dead\nMinion! Rank damage die to the damage.",
+      "source": {
+        "pdf_pages": [
+          213,
+          213
+        ],
+        "printed_pages": [
+          211,
+          211
+        ]
+      }
+    },
+    {
+      "id": "rootfoot",
+      "name": "Rootfoot",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“The ground is never empty. It is only sleeping.”",
+      "tags_raw": "Attack, Favored: Druid",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Druid"
+      ],
+      "damage_types": [],
+      "mana_cost": "5",
+      "range": "30 feet",
+      "duration": "2 rounds",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Roots reach up from the ground to ensnare a victim of up to Size 4 (Medium).\n\nOn Success, the victim gains the Held Debuff. The Rank of this Spell is used in the Opposed Difficulty to escape, instead of the default Str.",
+      "upgrades": {
+        "5": "Can target victims up to size Large (5). Duration is 3 rounds.",
+        "10": "Can target victims up to size Huge (6). Duration is 4 rounds.",
+        "15": "Can target victims up to size Colossal (7). The victim also gains the Poisoned Debuff."
+      },
+      "upgrades_note": null,
+      "raw_text": "ROOTFOOT\n“The ground is never empty. It is only sleeping.”\nAttack, Favored: Druid\nMana Cost: 5\nRange: 30 feet\nDuration: 2 rounds\nRoots reach up from the ground to ensnare a victim of\nup to Size 4 (Medium).\nOn Success, the victim gains the Held Debuff. The\nRank of this Spell is used in the Opposed Difficulty to\nescape, instead of the default Str.\nUPGRADES\nRank 5: Can target victims up to size Large (5).\nDuration is 3 rounds.\nRank 10: Can target victims up to size Huge (6).\nDuration is 4 rounds.\nRank 15: Can target victims up to size Colossal (7).\nThe victim also gains the Poisoned Debuff.",
+      "source": {
+        "pdf_pages": [
+          213,
+          213
+        ],
+        "printed_pages": [
+          211,
+          211
+        ]
+      }
+    },
+    {
+      "id": "second-chance",
+      "name": "Second Chance",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Everyone deserves one. Except for Phil. Never Phil.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "10",
+      "range": "10 feet",
+      "duration": "1 minute",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You raise a Mob with a level lower than your own from the dead. The Mob temporarily becomes your Undead Minion with half of its original Health Bar slots.\n\nYou spend one Action to command it, then it acts independently with 1 Move Action and 1 other Action (usually an Attack) until given new instructions.",
+      "upgrades": {
+        "5": "The Mob can be up to 5 levels higher than you, and the duration is 5 minutes.",
+        "10": "The Mob can be up to 10 levels higher than the caster, with a duration of 15 minutes.",
+        "15": "The Mob can be up to 15 levels higher than the caster, with a duration of 45 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "SECOND CHANCE\n“Everyone deserves one. Except for Phil. Never Phil.”\nPassive\nMana Cost: 10\nRange: 10 feet\nDuration: 1 minute\nYou raise a Mob with a level lower than your own from\nthe dead. The Mob temporarily becomes your Undead\nMinion with half of its original Health Bar slots.\nYou spend one Action to command it, then it acts\nindependently with 1 Move Action and 1 other Action\n(usually an Attack) until given new instructions.\nUPGRADES\nRank 5: The Mob can be up to 5 levels higher than\nyou, and the duration is 5 minutes.\nRank 10: The Mob can be up to 10 levels higher than\nthe caster, with a duration of 15 minutes.\nRank 15: The Mob can be up to 15 levels higher than\nthe caster, with a duration of 45 minutes.",
+      "source": {
+        "pdf_pages": [
+          213,
+          213
+        ],
+        "printed_pages": [
+          211,
+          211
+        ]
+      }
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Enjoy the illusion of safety.”",
+      "tags_raw": "Interrupt, Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": true,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "8",
+      "range": "Self",
+      "duration": "5 minutes",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You are surrounded by a translucent force field that moves with you and reduces non-magic damage you take. The Shield has 2 Health Bar slots, each with your Con Mod. When you take damage, reduce these Health Bar slots first. The Spell ends early if the shield loses all its Health Bar slots. You can’t heal a Shield.",
+      "upgrades": {
+        "5": "The Shield has 5 Health Bar slots.",
+        "10": "The Shield has 10 Health Bar slots.",
+        "15": "The Shield has 15 Health Bar slots."
+      },
+      "upgrades_note": null,
+      "raw_text": "SHIELD\n“Enjoy the illusion of safety.”\nInterrupt, Passive\nMana Cost: 8\nRange: Self\nDuration: 5 minutes\nYou are surrounded by a translucent force field that\nmoves with you and reduces non-magic damage you\ntake. The Shield has 2 Health Bar slots, each with your\nCon Mod. When you take damage, reduce these Health\nBar slots first. The Spell ends early if the shield loses all\nits Health Bar slots. You can’t heal a Shield.\nUPGRADES\nRank 5: The Shield has 5 Health Bar slots.\nRank 10: The Shield has 10 Health Bar slots.\nRank 15: The Shield has 15 Health Bar slots.",
+      "source": {
+        "pdf_pages": [
+          213,
+          213
+        ],
+        "printed_pages": [
+          211,
+          211
+        ]
+      }
+    },
+    {
+      "id": "shock-treatment",
+      "name": "Shock Treatment",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Electrical therapy initiated; consent not required.”",
+      "tags_raw": "Attack, Electric",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Electric"
+      ],
+      "mana_cost": "2",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "2",
+      "limitations": null,
+      "base_damage": "1d2 + Int Electric",
+      "description": "Like a deranged emperor, bolts of electricity shoot out from your fingers.",
+      "upgrades": {
+        "5": "+1d2 base damage, and you may choose to afflict the target with the Stunned Debuff instead of dealing damage.",
+        "10": "+1d2 base damage, and add 1 Rank damage die (Electric) at the end of the round.",
+        "15": "+1d2 base damage, and if you make this attack at melee range, you deal ×5 the total damage."
+      },
+      "upgrades_note": null,
+      "raw_text": "SHOCK TREATMENT\n“Electrical therapy initiated; consent not required.”\nAttack, Electric\nMana Cost: 2\nRange: 30 feet\nAI Favor: 2\nLike a deranged emperor, bolts of electricity shoot out\nfrom your fingers.\nBase Damage: 1d2 + Int Electric\nUPGRADES\nRank 5: +1d2 base damage, and you may choose to\nafflict the target with the Stunned Debuff instead of\ndealing damage.\nRank 10: +1d2 base damage, and add 1 Rank damage\ndie (Electric) at the end of the round.\nRank 15: +1d2 base damage, and if you make this\nattack at melee range, you deal ×5 the total damage.",
+      "source": {
+        "pdf_pages": [
+          214,
+          214
+        ],
+        "printed_pages": [
+          212,
+          212
+        ]
+      }
+    },
+    {
+      "id": "solsplash",
+      "name": "Solsplash",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“The sun is merely a star close enough to hate us.”",
+      "tags_raw": "Attack, Fire, Constitution, Favored: Druid",
+      "stat": "Constitution",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Druid"
+      ],
+      "damage_types": [
+        "Fire"
+      ],
+      "mana_cost": "13",
+      "range": "30 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d8 + Con Fire",
+      "description": "Beams of concentrated “sunlight” fall upon the victim and those around them. Sunscreen’s not gonna help.",
+      "upgrades": {
+        "5": "+1d8 base damage, +5ft Splash.",
+        "10": "+1d8 base damage and +10ft Splash. Each affected entity who loses at least 3 Health Bar slots this way gains the Burned Debuff.",
+        "15": "+1d8 base damage and +15ft Splash."
+      },
+      "upgrades_note": null,
+      "raw_text": "SOLSPLASH\n“The sun is merely a star close enough to hate us.”\nAttack, Fire, Constitution, Favored: Druid\nMana Cost: 13\nRange: 30 feet\nBeams of concentrated “sunlight” fall upon the victim\nand those around them. Sunscreen’s not gonna help.\nBase Damage: 1d8 + Con Fire\nUPGRADES\nRank 5: +1d8 base damage, +5ft Splash.\nRank 10: +1d8 base damage and +10ft Splash. Each\naffected entity who loses at least 3 Health Bar slots\nthis way gains the Burned Debuff.\nRank 15: +1d8 base damage and +15ft Splash.",
+      "source": {
+        "pdf_pages": [
+          214,
+          214
+        ],
+        "printed_pages": [
+          212,
+          212
+        ]
+      }
+    },
+    {
+      "id": "soul-collector",
+      "name": "Soul Collector",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“This soul appears… reusable.”",
+      "tags_raw": "Attack, Necrotic",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Necrotic"
+      ],
+      "mana_cost": "4",
+      "range": "50 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "1",
+      "limitations": null,
+      "base_damage": "1d4 + Int Necrotic",
+      "description": "With a twist of your hand, you siphon the spirit from your target.",
+      "upgrades": {
+        "5": "+1d4 base damage, and if this Spell deals the killing blow to a foe of at least half your level, it deals +1 bonus damage until you complete a long rest. This damage bonus is cumulative up to the Spell’s Rank.",
+        "10": "+1d4 base damage, and the bonus continues for one week.",
+        "15": "+1d4 base damage, and the bonus continues for as long as you remain on your current floor."
+      },
+      "upgrades_note": null,
+      "raw_text": "SOUL COLLECTOR\n“This soul appears… reusable.”\nAttack, Necrotic\nMana Cost: 4\nRange: 50 feet\nAI Favor: 1\nWith a twist of your hand, you siphon the spirit from\nyour target.\nBase Damage: 1d4 + Int Necrotic\nUPGRADES\nRank 5: +1d4 base damage, and if this Spell deals the\nkilling blow to a foe of at least half your level, it deals\n+1 bonus damage until you complete a long rest. This\ndamage bonus is cumulative up to the Spell’s Rank.\nRank 10: +1d4 base damage, and the bonus contin‑\nues for one week.\nRank 15: +1d4 base damage, and the bonus contin‑\nues for as long as you remain on your current floor.",
+      "source": {
+        "pdf_pages": [
+          214,
+          214
+        ],
+        "printed_pages": [
+          212,
+          212
+        ]
+      }
+    },
+    {
+      "id": "thunderlash",
+      "name": "Thunderlash",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Loud noises and bad decisions go hand-in-hand.”",
+      "tags_raw": "Attack, Sonic",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Sonic"
+      ],
+      "mana_cost": "12",
+      "range": "50 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d10 + Int Sonic",
+      "description": "You unleash a whip-like emanation of pure sound which thunders through the air.",
+      "upgrades": {
+        "5": "+1d10 base damage.",
+        "10": "+1d10 base damage, and this attack deals Armor-Piercing damage (ignores DR).",
+        "15": "+1d10 base damage, and you can change the range to a 15ft Cone attack."
+      },
+      "upgrades_note": null,
+      "raw_text": "THUNDERLASH\n“Loud noises and bad decisions go hand-in-hand.”\nAttack, Sonic\nMana Cost: 12\nRange: 50 feet\nYou unleash a whip-like emanation of pure sound\nwhich thunders through the air.\nBase Damage: 1d10 + Int Sonic\nUPGRADES\nRank 5: +1d10 base damage.\nRank 10: +1d10 base damage, and this attack deals\nArmor-Piercing damage (ignores DR).\nRank 15: +1d10 base damage, and you can change\nthe range to a 15ft Cone attack.",
+      "source": {
+        "pdf_pages": [
+          214,
+          214
+        ],
+        "printed_pages": [
+          212,
+          212
+        ]
+      }
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Congratulations. You can now see what’s trying to kill you.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "1",
+      "range": "Self",
+      "duration": "Until you enter a saferoom or descend to a new floor.",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You create a magical orb of light that follows slightly above and behind you. It provides bright light for a 20ft radius and dim light for a 20ft radius past that.",
+      "upgrades": {
+        "5": "You can move the orb up to 20 feet away from you.",
+        "10": "You can move the orb up to 60 feet away from you and can double the radius of the brightness with a thought.",
+        "15": "You can move the orb up to 100 feet away from you and attach it to a surface as an Action."
+      },
+      "upgrades_note": null,
+      "raw_text": "TORCH\n“Congratulations. You can now see what’s trying to\nkill you.”\nPassive\nMana Cost: 1\nRange: Self\nDuration: Until you enter a saferoom or descend to a\nnew floor.\nYou create a magical orb of light that follows slightly\nabove and behind you. It provides bright light for a 20ft\nradius and dim light for a 20ft radius past that.\nUPGRADES\nRank 5: You can move the orb up to 20 feet away\nfrom you.\nRank 10: You can move the orb up to 60 feet away\nfrom you and can double the radius of the brightness\nwith a thought.\nRank 15: You can move the orb up to 100 feet away\nfrom you and attach it to a surface as an Action.",
+      "source": {
+        "pdf_pages": [
+          214,
+          214
+        ],
+        "printed_pages": [
+          212,
+          212
+        ]
+      }
+    },
+    {
+      "id": "tripper",
+      "name": "Tripper",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Let’s see if they know we’re coming.”",
+      "tags_raw": "Passive, Area of Effect",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "None",
+      "range": "30ft Burst radius",
+      "duration": null,
+      "cooldown": "5 hours",
+      "ai_favor": null,
+      "limitations": "Does not detonate traps with very specific triggers. Must be imbued onto something you are wearing.",
+      "base_damage": null,
+      "description": "With a snap of your fingers, every movement, heat, and weight-triggered trap in the area “goes off.” Blades swing, bombs blow, and creatures are released.",
+      "upgrades": {
+        "5": "+Intelligence Burst radius.",
+        "10": "+Intelligence Burst radius.",
+        "15": "+Intelligence Burst radius, and all damage taken is considered Splash (half damage)."
+      },
+      "upgrades_note": null,
+      "raw_text": "TRIPPER\n“Let’s see if they know we’re coming.”\nPassive, Area of Effect\nMana Cost: None\nRange: 30ft Burst radius\nLimitations: Does not detonate traps with very specif‑\nic triggers. Must be imbued onto something you are\nwearing.\nCooldown: 5 hours\nWith a snap of your fingers, every movement, heat,\nand weight-triggered trap in the area “goes off.”\nBlades swing, bombs blow, and creatures are released.\nUPGRADES\nRank 5: +Intelligence Burst radius.\nRank 10: +Intelligence Burst radius.\nRank 15: +Intelligence Burst radius, and all damage\ntaken is considered Splash (half damage).",
+      "source": {
+        "pdf_pages": [
+          215,
+          215
+        ],
+        "printed_pages": [
+          213,
+          213
+        ]
+      }
+    },
+    {
+      "id": "turn-undead",
+      "name": "Turn Undead",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“What is dead should stay dead… and far away.”",
+      "tags_raw": "Attack, Area of Effect, Favored: Bard, Cleric, & Paladin",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": true,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Bard",
+        "Cleric",
+        "Paladin"
+      ],
+      "damage_types": [],
+      "mana_cost": "9",
+      "range": "10ft Cone",
+      "duration": "3 rounds",
+      "cooldown": "5 minutes",
+      "ai_favor": null,
+      "limitations": "Does not work against Bosses.",
+      "base_damage": null,
+      "description": "Make a single Cha-Opposed Spell Check vs. the Undead Mobs in the affected area.\n\nOn Success, the Undead Mob runs away for the duration of the Spell.",
+      "upgrades": {
+        "5": "+5ft Cone. Duration is 5 rounds.",
+        "10": "+10ft Cone. Duration is 10 rounds.",
+        "15": "+15ft Cone. Duration is 15 rounds. On an Amazing Success or better, the Undead Mob is destroyed."
+      },
+      "upgrades_note": null,
+      "raw_text": "TURN UNDEAD\n“What is dead should stay dead… and far away.”\nAttack, Area of Effect, Favored: Bard, Cleric, & Paladin\nMana Cost: 9\nRange: 10ft Cone\nDuration: 3 rounds\nLimitations: Does not work against Bosses.\nCooldown: 5 minutes\nMake a single Cha-Opposed Spell Check vs. the Un‑\ndead Mobs in the affected area.\nOn Success, the Undead Mob runs away for the dura‑\ntion of the Spell.\nUPGRADES\nRank 5: +5ft Cone. Duration is 5 rounds.\nRank 10: +10ft Cone. Duration is 10 rounds.\nRank 15: +15ft Cone. Duration is 15 rounds. On an\nAmazing Success or better, the Undead Mob is de‑\nstroyed.",
+      "source": {
+        "pdf_pages": [
+          215,
+          215
+        ],
+        "printed_pages": [
+          213,
+          213
+        ]
+      }
+    },
+    {
+      "id": "twinkle-toes",
+      "name": "Twinkle Toes",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Fly my pretties, fly!”",
+      "tags_raw": "Intelligence, Passive",
+      "stat": "Intelligence",
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "2",
+      "range": "5 feet",
+      "duration": "A number of seconds equal to your Intelligence.",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "Target a pet or minion within range. It has Move ×2 for the duration.",
+      "upgrades": {
+        "5": "The pet or minion has Move ×3 for the duration.",
+        "10": "The pet or minion has Move ×4 for the duration.",
+        "15": "The pet or minion has Move ×5 for the duration."
+      },
+      "upgrades_note": null,
+      "raw_text": "TWINKLE TOES\n“Fly my pretties, fly!”\nIntelligence, Passive\nMana Cost: 2\nRange: 5 feet\nDuration: A number of seconds equal to your\nIntelligence.\nTarget a pet or minion within range. It has Move ×2 for\nthe duration.\nUPGRADES\nRank 5: The pet or minion has Move ×3 for the duration.\nRank 10: The pet or minion has Move ×4 for the duration.\nRank 15: The pet or minion has Move ×5 for the duration.",
+      "source": {
+        "pdf_pages": [
+          215,
+          215
+        ],
+        "printed_pages": [
+          213,
+          213
+        ]
+      }
+    },
+    {
+      "id": "unnecessary-force",
+      "name": "Unnecessary Force",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Excessive force authorized. Paperwork waived.”",
+      "tags_raw": "Attack, Force",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Force"
+      ],
+      "mana_cost": "13",
+      "range": "40 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d12 + Int Force",
+      "description": "A shockwave akin to that of an A-bomb crashes over your target.",
+      "upgrades": {
+        "5": "+1d12 base damage.",
+        "10": "+1d12 base damage, and the target is pushed 10 feet.",
+        "15": "+1d12 base damage, and the target is pushed 15 feet."
+      },
+      "upgrades_note": null,
+      "raw_text": "UNNECESSARY FORCE\n“Excessive force authorized. Paperwork waived.”\nAttack, Force\nMana Cost: 13\nRange: 40 feet\nA shockwave akin to that of an A-bomb crashes over\nyour target.\nBase Damage: 1d12 + Int Force\nUPGRADES\nRank 5: +1d12 base damage.\nRank 10: +1d12 base damage, and the target is\npushed 10 feet.\nRank 15: +1d12 base damage, and the target is\npushed 15 feet.",
+      "source": {
+        "pdf_pages": [
+          215,
+          215
+        ],
+        "printed_pages": [
+          213,
+          213
+        ]
+      }
+    },
+    {
+      "id": "vine-porn",
+      "name": "Vine Porn",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“It’s like tentacle porn, but with vines… sorry, Mom.”",
+      "tags_raw": "Attack, Piercing, Constitution, Favored: Druid",
+      "stat": "Constitution",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [
+        "Druid"
+      ],
+      "damage_types": [
+        "Piercing"
+      ],
+      "mana_cost": "3",
+      "range": "20 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": "1",
+      "limitations": null,
+      "base_damage": "1d4 + Con Piercing",
+      "description": "Magical vines with pulsating veins shoot up from the ground or sprout from the target’s own body to rip and tear and smack them around a bit.",
+      "upgrades": {
+        "5": "+1d4 base damage.",
+        "10": "+1d4 base damage, and this Attack deals Armor-Piercing damage (ignores DR).",
+        "15": "+1d4 base damage. On a Critical Hit, the target takes ×4 damage."
+      },
+      "upgrades_note": null,
+      "raw_text": "VINE PORN\n“It’s like tentacle porn, but with vines… sorry, Mom.”\nAttack, Piercing, Constitution, Favored: Druid\nMana Cost: 3\nRange: 20 feet\nAI Favor: 1\nMagical vines with pulsating veins shoot up from the\nground or sprout from the target’s own body to rip and\ntear and smack them around a bit.\nBase Damage: 1d4 + Con Piercing\nUPGRADES\nRank 5: +1d4 base damage.\nRank 10: +1d4 base damage, and this Attack deals\nArmor-Piercing damage (ignores DR).\nRank 15: +1d4 base damage. On a Critical Hit, the\ntarget takes ×4 damage.",
+      "source": {
+        "pdf_pages": [
+          215,
+          215
+        ],
+        "printed_pages": [
+          213,
+          213
+        ]
+      }
+    },
+    {
+      "id": "wall-of-fire",
+      "name": "Wall of Fire",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“You’re gonna fall in… to a burnin’ ring of fire.”",
+      "tags_raw": "Passive, Fire",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [
+        "Fire"
+      ],
+      "mana_cost": "15",
+      "range": "30 feet",
+      "duration": "2 rounds",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d2 Fire for every 1ft of wall the victim passes through, and they gain the Burned Debuff.",
+      "description": "Creates a 30ft-long × 7ft-high × 2ft-thick wall of fire.",
+      "upgrades": {
+        "5": "+1d2 base damage. The wall can be turned into a ring of fire. Duration is 5 rounds.",
+        "10": "+1d2 base damage. Creates a 50ft-long × 10ft-high × 3ft-thick wall. Duration is 10 rounds.",
+        "15": "+1d2 base damage. Creates a 100ft-long × 20ft-high × 5ft-thick wall. Duration is 15 rounds."
+      },
+      "upgrades_note": null,
+      "raw_text": "WALL OF FIRE\n“You’re gonna fall in… to a burnin’ ring of fire.”\nPassive, Fire\nMana Cost: 15\nRange: 30 feet\nDuration: 2 rounds\nCreates a 30ft-long × 7ft-high × 2ft-thick wall of fire.\nBase Damage: 1d2 Fire for every 1ft of wall the victim\npasses through, and they gain the Burned Debuff.\nUPGRADES\nRank 5: +1d2 base damage. The wall can be turned\ninto a ring of fire. Duration is 5 rounds.\nRank 10: +1d2 base damage. Creates a 50ft-long ×\n10ft-high × 3ft-thick wall. Duration is 10 rounds.\nRank 15: +1d2 base damage. Creates a 100ft-long ×\n20ft-high × 5ft-thick wall. Duration is 15 rounds.",
+      "source": {
+        "pdf_pages": [
+          216,
+          216
+        ],
+        "printed_pages": [
+          214,
+          214
+        ]
+      }
+    },
+    {
+      "id": "water-breathing",
+      "name": "Water Breathing",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“It’s okay to inhale.”",
+      "tags_raw": "Intelligence, Passive",
+      "stat": "Intelligence",
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "2",
+      "range": "Self",
+      "duration": "A number of seconds equal to the caster’s Intelligence ×3.",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "The target can breathe underwater without issue.",
+      "upgrades": {
+        "5": "You may now cast this upon others at a range of 5 feet.",
+        "10": "The targets roll Swimming Skill Checks with Advantage.",
+        "15": "You can target any or all individuals within a 15ft Burst radius."
+      },
+      "upgrades_note": null,
+      "raw_text": "WATER BREATHING\n“It’s okay to inhale.”\nIntelligence, Passive\nMana Cost: 2\nRange: Self\nDuration: A number of seconds equal to the caster’s\nIntelligence ×3.\nThe target can breathe underwater without issue.\nUPGRADES\nRank 5: You may now cast this upon others at a range\nof 5 feet.\nRank 10: The targets roll Swimming Skill Checks with\nAdvantage.\nRank 15: You can target any or all individuals within a\n15ft Burst radius.",
+      "source": {
+        "pdf_pages": [
+          216,
+          216
+        ],
+        "printed_pages": [
+          214,
+          214
+        ]
+      }
+    },
+    {
+      "id": "web",
+      "name": "Web",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Blast your goo onto foes!”",
+      "tags_raw": "Attack, Intelligence",
+      "stat": "Intelligence",
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "6",
+      "range": "20ft Cone",
+      "duration": "2 rounds",
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "A cone of sticky webbing shoots from your fingers.\n\nMake a single Spell Attack Skill Check vs. each friend and foe’s Evade (if any). On Success, that entity gains the Held Debuff. The Rank of this spell is used in the Opposed Difficulty to escape, instead of Str.",
+      "upgrades": {
+        "5": "+5ft Cone. Duration is 5 rounds.",
+        "10": "+5ft Cone. Duration is 10 rounds.",
+        "15": "+5ft Cone. Duration is 15 rounds."
+      },
+      "upgrades_note": null,
+      "raw_text": "WEB\n“Blast your goo onto foes!”\nAttack, Intelligence\nMana Cost: 6\nRange: 20ft Cone\nDuration: 2 rounds\nA cone of sticky webbing shoots from your fingers.\nMake a single Spell Attack Skill Check vs. each friend\nand foe’s Evade (if any).\nOn Success, that entity gains the Held Debuff. The\nRank of this spell is used in the Opposed Difficulty to\nescape, instead of Str.\nUPGRADES\nRank 5: +5ft Cone. Duration is 5 rounds.\nRank 10: +5ft Cone. Duration is 10 rounds.\nRank 15: +5ft Cone. Duration is 15 rounds.",
+      "source": {
+        "pdf_pages": [
+          216,
+          216
+        ],
+        "printed_pages": [
+          214,
+          214
+        ]
+      }
+    },
+    {
+      "id": "wilburs-slow-build-fireblast",
+      "name": "Wilbur’s Slow-Build Fireblast",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Hold. Hold! HOLD!”",
+      "tags_raw": "Attack, Fire",
+      "stat": null,
+      "passive": false,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "attack",
+      "favored_classes": [],
+      "damage_types": [
+        "Fire"
+      ],
+      "mana_cost": "60",
+      "range": "50 feet",
+      "duration": null,
+      "cooldown": null,
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": "1d8 + Int Fire, and the target gains the Burned Debuff.",
+      "description": "This Spell can be cast and held as a swirling ring of fire around your ring finger until you unleash it. Only one ring may be held at a time. The next time you perform an Attack Action, it must be this Spell (at no additional Mana cost).\n\nIf anyone touches the ring with the intent to diffuse it (you may oppose that Action), the Attack hits them for half damage. The appendage they touched you with smolders, useless for a number of rounds equal to the damage inflicted.",
+      "upgrades": {
+        "5": "+1d8 base damage. For each full day you hold the spell, +1d8 Fire damage.",
+        "10": "+1d8 base damage and +5ft Splash.",
+        "15": "+1d8 base damage and +5ft Splash."
+      },
+      "upgrades_note": null,
+      "raw_text": "WILBUR’S SLOW-BUILD FIREBLAST\n“Hold. Hold! HOLD!”\nAttack, Fire\nMana Cost: 60\nRange: 50 feet\nBase Damage: 1d8 + Int Fire, and the target gains the\nBurned Debuff.\nThis Spell can be cast and held as a swirling ring of fire\naround your ring finger until you unleash it. Only one ring\nmay be held at a time. The next time you perform an Attack\nAction, it must be this Spell (at no additional Mana cost).\nIf anyone touches the ring with the intent to diffuse it (you\nmay oppose that Action), the Attack hits them for half dam‑\nage. The appendage they touched you with smolders, use‑\nless for a number of rounds equal to the damage inflicted.\nUPGRADES\nRank 5: +1d8 base damage. For each full day you hold\nthe spell, +1d8 Fire damage.\nRank 10: +1d8 base damage and +5ft Splash.\nRank 15: +1d8 base damage and +5ft Splash.",
+      "source": {
+        "pdf_pages": [
+          216,
+          216
+        ],
+        "printed_pages": [
+          214,
+          214
+        ]
+      }
+    },
+    {
+      "id": "wisp-armor",
+      "name": "Wisp Armor",
+      "kind": "spell",
+      "subsection": null,
+      "flavor_text": "“Empty minds are surprisingly easy to protect.”",
+      "tags_raw": "Passive",
+      "stat": null,
+      "passive": true,
+      "interrupt": false,
+      "area_of_effect": false,
+      "attack_mode": null,
+      "damage_effect_for": null,
+      "spell_mode": "passive",
+      "favored_classes": [],
+      "damage_types": [],
+      "mana_cost": "5",
+      "range": "Self",
+      "duration": "5 minutes",
+      "cooldown": "5 minutes",
+      "ai_favor": null,
+      "limitations": null,
+      "base_damage": null,
+      "description": "You conjure a protective barrier that reduces all magic damage (typically Spells) down to its Rank 1 base damage (1 die + Stat Mod) without any Upgrades or other bonuses. This Spell also makes you immune to Mind Control.",
+      "upgrades": {
+        "5": "The duration is 10 minutes.",
+        "10": "The duration is 15 minutes.",
+        "15": "The duration is 20 minutes."
+      },
+      "upgrades_note": null,
+      "raw_text": "WISP ARMOR\n“Empty minds are surprisingly easy to protect.”\nPassive\nMana Cost: 5\nRange: Self\nDuration: 5 minutes\nCooldown: 5 minutes\nYou conjure a protective barrier that reduces all magic\ndamage (typically Spells) down to its Rank 1 base dam‑\nage (1 die + Stat Mod) without any Upgrades or other bo‑\nnuses. This Spell also makes you immune to Mind Control.\nUPGRADES\nRank 5: The duration is 10 minutes.\nRank 10: The duration is 15 minutes.\nRank 15: The duration is 20 minutes.",
+      "source": {
+        "pdf_pages": [
+          216,
+          216
+        ],
+        "printed_pages": [
+          214,
+          214
+        ]
+      }
+    }
+  ]
+}
