@@ -1,7 +1,8 @@
 ---
-title: "Session 00"
+title: "Session 00: The Looky-loo"
 group: "Sessions"
 type: doc
+aliases: ["Session 00"]
 order: 1
 dek: "Noosa, 9pm. The world flattens. Two strangers go down the stairs."
 ---
