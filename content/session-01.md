@@ -11,6 +11,8 @@ The party woke up in [[tutorial-guild]] with a silver skull hanging over [[frank
 head, left four hours later with their first armour and a spell book, and ended the night
 standing over a pit of bones with a goblin on a rope.
 
+![A skull and a spell book, the goblin fight, [[the-goblin-prisoner|please kindly, sir]], following the [[rats]], and the bones in [[the-sump]]](img/s01-follow-the-rats.jpg)
+
 ## The Tutorial Guild
 
 [[mauritius]] — six foot of bat, level 50, all sharp pointy teeth — unfolded from the

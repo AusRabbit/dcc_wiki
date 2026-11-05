@@ -11,6 +11,8 @@ dek: "Noosa, 9pm. The world flattens. Two strangers go down the stairs."
 pants. [[frank-doyle]] was there to clear his head about dropping out of university.
 Neither knew the other. At 9pm the world flattened.
 
+![9pm in Noosa, the Looky-loo at [[the-stairwell]], [[the-wall-of-blood]], [[the-white-dress-girls|the girls in white]] and [[tutorial-guild]]](img/s00-the-looky-loo.jpg)
+
 ## The Flattening
 
 A rush of dust came off the ruined boulevard and onto the sand. The couple who had been
