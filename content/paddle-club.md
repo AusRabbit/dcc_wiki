@@ -8,4 +8,8 @@ dek: "Frank's. 1d6+1 bludgeoning."
 ---
 
 [[frank-doyle]]'s starting weapon. Handed to [[michelle]] on Floor 1 with the instruction to
-defend herself at all times, which she is considering doing in an unintended direction.
+defend herself at all times. She has since swapped to the [[nailed-two-by-four]], and Frank
+has the paddle back.
+
+In [[session-01]] it bounced off a [[goblin-hunters|goblin hunter]]'s crockery helmet with a
+clang. Twice. Frank's verdict: *I'm useless, but I don't give up.*
