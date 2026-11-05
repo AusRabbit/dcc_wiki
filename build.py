@@ -12,6 +12,7 @@ import html
 import json
 import pathlib
 import re
+import shutil
 import sys
 from datetime import date
 from reference import load_reference_pages
@@ -119,6 +120,9 @@ def inline(text, resolve, unresolved):
 # ---------------------------------------------------------------- block markdown
 
 CALLOUT = re.compile(r"^>\s*\[!(\w+)\]\s*(.*)$")
+# A line on its own: ![caption](img/file.jpg). Paths are relative to content/,
+# so Obsidian shows the picture too; build() copies content/img/ to docs/img/.
+IMAGE = re.compile(r"^!\[(.*)\]\(([^)\s]+)\)$")   # caption may hold [[wikilinks]]
 
 
 def render_prose(body, resolve, unresolved):
@@ -146,6 +150,20 @@ def render_prose(body, resolve, unresolved):
                           inline(" ".join(para).strip(), resolve, unresolved)))
             continue
 
+        m = IMAGE.match(stripped)
+        if m:
+            caption, src = m.group(1).strip(), m.group(2)
+            if not (CONTENT / src).is_file():
+                unresolved.append("image: " + src)
+            out.append('<figure class="fig"><img src="%s" alt="%s" loading="lazy">%s</figure>'
+                       % (html.escape(src),
+                          html.escape(re.sub(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]",
+                                             lambda w: w.group(2) or w.group(1), caption)),
+                          "<figcaption>%s</figcaption>" % inline(caption, resolve, unresolved)
+                          if caption else ""))
+            i += 1
+            continue
+
         if stripped.startswith("## "):
             out.append("<h2>%s</h2>" % inline(stripped[3:], resolve, unresolved))
             i += 1
@@ -159,8 +177,11 @@ def render_prose(body, resolve, unresolved):
             out.append("<ul>%s</ul>" % "".join(items))
             continue
 
-        para = []
-        while i < len(lines) and lines[i].strip() and not lines[i].strip().startswith(("## ", "- ", ">")):
+        # Always take the first line, so a line no rule above claimed (a bare
+        # "> quote", a malformed image) becomes text instead of looping forever.
+        para = [stripped]
+        i += 1
+        while i < len(lines) and lines[i].strip() and not lines[i].strip().startswith(("## ", "- ", ">", "![")):
             para.append(lines[i].strip())
             i += 1
         out.append("<p>%s</p>" % inline(" ".join(para), resolve, unresolved))
@@ -335,6 +356,11 @@ def build():
             .replace("__BUILT__", date.today().isoformat()))
 
     OUT.mkdir(exist_ok=True)
+    # Images live in the vault (content/img/) and are published beside the page.
+    if (CONTENT / "img").is_dir():
+        if (OUT / "img").exists():
+            shutil.rmtree(OUT / "img")
+        shutil.copytree(CONTENT / "img", OUT / "img")
     (OUT / "index.html").write_text(page, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
 
@@ -384,7 +410,7 @@ def build():
     print("%d canonical names -> names.txt" % len(names))
     print("%d corrections -> corrections.json" % len(corrections))
     if unresolved_all:
-        print("\nUnresolved wikilinks (they render in red on the site):")
+        print("\nUnresolved wikilinks or missing images (links render in red on the site):")
         for src, target in unresolved_all:
             print("  %-26s -> [[%s]]" % (src + ".md", target))
         return 1
