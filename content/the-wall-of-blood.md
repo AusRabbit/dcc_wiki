@@ -12,7 +12,7 @@ Announced by a rumbling in the floor, then thirty feet of blood filling the corr
 wall at a great rate of knots, stripping lichen off the stone as it goes.
 
 [[darcy-smith]] rolled a natural twenty, climbed the wall, caught hold of a brazier and held
-on with [[michelle]] over his shoulder. That's where his Climbing skill came from. [[frank-doyle]]
+on with [[michelle]] over his shoulder. [[frank-doyle]]
 tried to surf it, ate a wall, and came out coughing thick mucusy blood.
 
 It subsides on its own. The GM was clear that it comes and goes. Four hours later the

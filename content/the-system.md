@@ -9,7 +9,9 @@ dek: "Characteristics, health, mana, safe rooms, loot."
 Five characteristics — strength, dexterity, constitution, intelligence, charisma — each with
 a modifier that applies to every roll of that type. A skill check is d20 + skill rank +
 modifier. The GM sets the difficulty secretly and tells you how well you did, not the number.
-If you don't have the skill, you can usually still try it, with Disadvantage.
+If you don't have the skill, you can usually still try it, with Disadvantage. The difficulty is almost never below 10.
+
+On a failed check, the GM may offer a choice: fail outright, or succeed with a consequence. Darcy fed the boss its bomb and got his hand bitten. Frank put Michelle out and lost the poncho.
 
 Health is a bar of ten slots, tracked on the dashboard. Mana pays for spells, and it only
 comes back when you rest, drink a potion or get the right buff. Time passing out of combat
@@ -31,3 +33,9 @@ crafting — costs hours off the floor's countdown.
 > The published system runs to roughly a thousand pages of notes, thoughts and structure that
 > don't talk to each other. Everything on the dashboard is linked to a rule that had to be dug
 > out and translated first.
+
+## Boss battles
+
+Step into a boss's lair and the world freezes. *BOSS BATTLE* streams across your HUD, music
+plays, and the exits seal until one side is dead. Every boss drops a map. A neighbourhood boss
+drops a [[neighbourhood-map]], and killing one is worth a level. See [[the-bone-collector]].

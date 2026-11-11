@@ -20,4 +20,6 @@ other suspicious activity echo from somewhere in the distance. The floor's mess 
 by its janitor mobs, the [[rats]], and it ends up in [[the-sump]], a sewer sub-level that
 the party found behind a broken grate.
 
+[[the-bone-collector]], a neighbourhood boss, ruled [[the-sump|the bone pit]] until [[session-02]]. After that fight the party had four days and four hours left to find the stairs.
+
 This is a tutorial floor: you gain skills here by trying things ([[levelling-skills]]).

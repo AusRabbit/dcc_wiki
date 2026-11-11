@@ -13,3 +13,6 @@ has the paddle back.
 
 In [[session-01]] it bounced off a [[goblin-hunters|goblin hunter]]'s crockery helmet with a
 clang. Twice. Frank's verdict: *I'm useless, but I don't give up.*
+
+By [[session-02]], Frank was carrying a [[tire-iron]] in his main hand. The paddle stays on
+his attack bar. It uses Club, and the tire iron uses Quarterstaff.

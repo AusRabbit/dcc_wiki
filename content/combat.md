@@ -64,9 +64,8 @@ everything within 30 feet.
 - **Then:** spend your other action to Evade the attacks you just pulled, if you like. Or take them on the chin.
 - **Rank 5:** you get a free evade against every attack you taunt.
 
-Both of you tried it untrained in [[session-01]] and both missed — Frank shouting *look at
-me, you ugly goblins*, Darcy shouting *don't hit my friend*. Both attempts are ticked, so
-either of you can keep Taunt at the next safe room ([[levelling-skills]]).
+Both of you tried it in [[session-01]] and both missed — Frank shouting *look at
+me, you ugly goblins*, Darcy shouting *don't hit my friend*.
 
 > [!note] Why it matters for you two
 > Darcy is the tough one and the better evader. Frank is the glass cannon with one big
@@ -81,7 +80,7 @@ either of you can keep Taunt at the next safe room ([[levelling-skills]]).
 - **Move:** you can take a 10-foot step to get next to them first.
 - **Effect:** you take the damage instead. You can't evade it, shield-block it or magic it away.
 - **Rank 5:** +5 DR whenever you catch, then another +5 at 10 and 15. A dedicated catcher becomes very hard to hurt.
-- **The catch:** it's a Passive skill, and you can't use one without ranks. Neither of you has it yet. Passive skills usually come from a potion, a scroll or gear.
+- **The catch:** it's a Passive skill, and you can't use one without ranks. Passive skills usually come from a potion, a scroll or gear.
 
 **Taunt or Catcher?** Taunt happens *before* the dice. You redirect the attack and can still
 dodge it. Catcher happens *after* the hit lands. You just take it, but it can't fail.
@@ -125,4 +124,9 @@ two slots gone, and the last point is lost.
 - **Hotlist your stuff.** Ten slots. Anything not on it costs an action to dig out. The spell, the shotgun and the potions belong there.
 - **Mana doesn't come back mid-fight.** Only rest, potions or a buff will do it.
 - **Mobs:** ordinary mobs get a move and one attack each, split evenly across the party. Bosses and elites get one action *per crawler*.
+- **In hand or on the hotlist.** A button on your attack bar isn't the weapon. If it isn't in your hand, swapping it out of the hotlist is free as part of an attack. Digging it out of your inventory costs an action.
+- **Not evading saves an action, but it can cost you.** Darcy let the Bone Collector hit him to keep both actions, and got Staggered: his next action couldn't be a move.
+- **Minor Injury** is −2 to checks, and a second one becomes long-term. A gold standard healing potion mends one.
+- **Applying damage** — right-click your token on the battle map.
+- **[[ai-favour]]** — spend it to reroll before the GM calls the result. Not on a natural 1.
 - **[[call-a-play]]** is a beat 4 action. 2d6, keep the highest, add it to your mate's roll — or to the damage, if they'd have hit anyway.

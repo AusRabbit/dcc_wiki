@@ -1,5 +1,8 @@
 # Canonical names only - pass to the transcriber with --names.
 # Do NOT add misspellings here; they belong in corrections.json.
+Betsy
+Biscuit Bomb
+Bone Carapace
 Borant
 Cheryl
 Dale Prosky
@@ -9,25 +12,33 @@ Frank
 Frank Doyle
 Goblin Hunters
 Goblin Searchers
+Golf Club of the Moist Middle Manager
 Mauritius
 Michelle
 Miscellaneous Junk
 Mom's Emergency Poncho
+Motorcycle Jacket
 Nailed Two-by-Four
+Neighbourhood Map
 Noosa
 Oddments
 Paddle Club
 Potion of +2 Skill
 Rats
 Sawn-off Shotgun
+Scroll of Fear
+Scroll of Ice Blast
+Short Bow
 Spell Book of Magic Missile
+The Bone Collector
+The Bone Pit
 The Borant Corporation
 The Girls in White Dresses
 The Goblin Prisoner
 The Stairwell
-The Sump
 The Syndicate
 The Tutorial Guild
 The Wall of Blood
 The World Dungeon
+Tire Iron
 two-by-four

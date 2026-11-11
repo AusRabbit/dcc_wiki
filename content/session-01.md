@@ -25,8 +25,7 @@ had juked it out.
 She walked them through their loot boxes. [[darcy-smith]] put on
 [[moms-emergency-poncho]] and immediately rustled. Frank strapped on a pair of
 [[double-pluggers]]. Then came the first harvest of skills, done the tutorial way
-([[levelling-skills]]): Frank kept Deception, Darcy kept Climbing, Frank's Club, Endurance
-and Stealth went up, and Darcy's Shotgun reached rank 5 and started doing 2d10.
+([[levelling-skills]]): each of them kept one new skill, and some of the old ones went up.
 
 Mauritius gave [[michelle]] a long shoulder massage and a lot of whispered advice, and
 quietly told Darcy to put Frank at the front of the battle line. After four hours she

@@ -357,10 +357,16 @@ def build():
 
     OUT.mkdir(exist_ok=True)
     # Images live in the vault (content/img/) and are published beside the page.
+    # Copy over the top rather than delete-and-recopy, then prune only images
+    # that no longer exist in the vault, so a normal build deletes nothing.
     if (CONTENT / "img").is_dir():
-        if (OUT / "img").exists():
-            shutil.rmtree(OUT / "img")
-        shutil.copytree(CONTENT / "img", OUT / "img")
+        shutil.copytree(CONTENT / "img", OUT / "img", dirs_exist_ok=True)
+        for stale in (OUT / "img").rglob("*"):
+            if stale.is_file() and not (CONTENT / "img" / stale.relative_to(OUT / "img")).exists():
+                try:
+                    stale.unlink()
+                except OSError as e:
+                    print("Could not remove stale image %s: %s" % (stale, e))
     (OUT / "index.html").write_text(page, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
 

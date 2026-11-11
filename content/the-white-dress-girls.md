@@ -28,3 +28,13 @@ sisters are revered and worshipped, and they *shouldn't be up*. As
 [[the-goblin-prisoner]] was explaining this, schoolgirls giggled somewhere in the distance.
 The prisoner is very glad to be getting away from that sound. Nobody has said the girls and
 the sisters are the same.
+
+## What the goblin says
+
+In [[session-02]], [[the-goblin-prisoner]] said the sisters have been dead for ages. Now
+they're up, walking around and causing mayhem. Get their bones back to the grave, and they
+might quit.
+
+While the party searched [[the-sump|the bone pit]] for the right bones, the GM's hint was to
+use the goblin to work out what *goblin* bones look like. That fits two green-skinned girls.
+The party has one bone so far.
