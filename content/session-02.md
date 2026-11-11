@@ -11,6 +11,8 @@ The party stood on the rim of [[the-sump|the bone pit]] with a goblin on a rope,
 you find one particular set of bones in forty metres of them. [[frank-doyle]] decided to
 investigate up close, and that's when the edge gave way.
 
+![One bad step into the pit, a biscuit for [[the-bone-collector|the boss]], *come on, Betsy*, [[michelle]]'s Fire Fingers, and the right bone](img/s02-the-bone-collector.jpg)
+
 ## Kitted Out
 
 New loot from the safe room. [[darcy-smith]] swapped the poncho for a
