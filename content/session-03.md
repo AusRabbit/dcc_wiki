@@ -11,6 +11,8 @@ The party buried the sisters' bone on a sunlit hill, watched a leprechaun carry 
 it into a neighbourhood that runs on slave labour and devil's lettuce, and left a boss's
 mansion with one weapon fewer and four thousand gold lighter.
 
+![Taken before their time, it was lube, a trail of clover, burning the devil's lettuce, another natural 1 on [[fergal-goldgrip|Fergal]]'s stairs, and four thousand gold lighter](img/s03-to-be-sure-to-be-sure.jpg)
+
 ## Patch Notes
 
 [[michelle]] wasn't at breakfast. [[mauritius]] had whisked her into a back room after the
