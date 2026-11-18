@@ -11,7 +11,7 @@ The party buried the sisters' bone on a sunlit hill, watched a leprechaun carry 
 it into a neighbourhood that runs on slave labour and devil's lettuce, and left a boss's
 mansion with one weapon fewer and four thousand gold lighter.
 
-![Taken before their time, it was lube, a trail of clover, burning the devil's lettuce, another natural 1 on [[fergal-goldgrip|Fergal]]'s stairs, and four thousand gold lighter](img/s03-to-be-sure-to-be-sure.jpg)
+![Taken before their time, it was lube, a trail of clover, burning the devil's lettuce, another tumble down [[fergal-goldgrip|Fergal]]'s stairs, and four thousand gold lighter](img/s03-to-be-sure-to-be-sure.jpg)
 
 ## Patch Notes
 
@@ -63,10 +63,8 @@ stocky, broken-nosed leprechaun in a waistcoat two sizes too small, cracking his
 around a blackthorn club. *To be sure, to be sure.*
 
 Frank drank a healing potion and flanked up the hill. From the top he saw two more bruisers,
-and something moving in the far corner. Two of them went for him. The first swing was a near
-miss — Darcy gave up an action to put him off his stroke — but the second cracked Frank across
-the jowls for twenty. His new [[helm-of-the-bone-collector|bone helm]] made him vulnerable to
-bludgeoning, and it was proving a poisoned chalice. He was down to his last health slot.
+and something moving in the far corner. Two of them went for him. The first swing nearly took his head off — only Darcy, shouting and waving, put the leprechaun off his stroke — but the second cracked Frank across the jowls with a sound like a bat on a cricket ball. His new [[helm-of-the-bone-collector|bone helm]] made him vulnerable to
+bludgeoning, and it was proving a poisoned chalice. His health bar was down to a sliver.
 
 Darcy levelled Betsy at the bruiser vaulting the wall towards him. What was left was a little
 leg, a little arm and a little green hat. Frank used [[the-scratcher]]. It came up lube — as
@@ -74,12 +72,9 @@ if a dump truck had emptied a load of KY jelly over him — and Frank and both b
 sliding off the hill in a torrent of it.
 
 Then a thump, a puff of smoke, and a whistle like incoming artillery: a
-[[spud-mortar-leprechaun]] in the corner. Darcy spent an AI favour and got clear as the shell
-landed. Potato shrapnel came out like molten lava and went through everything. Frank drank
-another potion and took the helmet off. Darcy shot a bruiser with a natural 20, and its club
-flew straight into his hands — the [[shillelagh-bludger]]. His next shot hit the mortar's
-ammo crate, and the whole corner turned to mashed potato. Frank's Magic Missile bounced off
-the wall. The last bruiser vanished with a cackle.
+[[spud-mortar-leprechaun]] in the corner. Darcy should have been caught in it, but the System AI was in a generous mood, and he threw himself clear as the shell landed. Potato shrapnel came out like molten lava and went through everything. Frank drank
+another potion and took the helmet off. Darcy put a perfect shot into a bruiser, and its club flew straight into his hands — the [[shillelagh-bludger]]. His next shot hit the mortar's
+ammo crate, and the whole corner turned to mashed potato. Frank's Magic Missile grazed past its target and bounced off the wall. The last bruiser vanished with a cackle.
 
 ## They Took the Bones
 
@@ -89,46 +84,44 @@ enemies on the map.
 
 The map shows a staircase in this room — one of the floor's stairwells.
 
-Darcy tracked the runaway with a roll of 20. It wasn't hard: the leprechaun's stealth is
+Darcy tracked the runaway without breaking stride. It wasn't hard: the leprechaun's stealth is
 terrible, and he was leaving a trail of clover. They got out before the twins arrived, then
 rested an hour to heal.
 
 ## The Leprechaun Quarter
 
 The [[leprechaun-quarter]] is a house of disrepute: a drug trade, goblins enslaved in the
-fields, and chain gangs marched along corridors that cross and climb over each other. Darcy
-tried to bribe a bruiser for directions with a thousand gold. It went badly. Frank clubbed
+fields, and chain gangs marched along corridors that cross and climb over each other. Darcy tried to bribe a bruiser for directions with a fistful of gold. It went very badly. Frank clubbed
 the bruiser from behind, and Darcy finished him with the bludger, sending his teeth flying.
-Getting away cost each of them two health slots.
+They both took a beating getting away.
 
 The trail ended in a cavernous room with dirt for a floor. Goblins worked the devil's lettuce
 under leprechaun overseers, there were two bruisers on a balcony and a spud mortar off to the
 left, and a well-dressed leprechaun arrived by horse and cart to bows from the guards. Frank
 scouted and had an idea: burn the weed. The fire caused chaos. Goblins slipped away and the
 leprechauns ran to save their crop. Frank went up onto the roof first.
-It was ugly, with a boost from Darcy and a foot in the face somewhere along the way. He dropped
+He nearly didn't make it — it was ugly, with a boost from Darcy and a foot in the face somewhere along the way. He dropped
 his rope, Darcy climbed it quickly and quietly, and they slipped in through a window at the top
 of the stairs of a two-storey mansion.
 
 ## Fergal Goldgrip
 
-Frank tried to read the room and rolled a natural 1. The lube was still on his shoes, and he
+Frank tried to read the room and failed about as badly as a man can. The lube was still on his shoes, and he
 went down the polished staircase on his backside. The screen froze. *BOSS BATTLE.*
 
-[[fergal-goldgrip]], level 6 neighbourhood boss: a natty leprechaun in three-piece emerald
+[[fergal-goldgrip]], neighbourhood boss: a natty leprechaun in three-piece emerald
 tweed, with a ledger chained to his wrist and a pot of every coin anyone on this floor ever
 owed him at the end of a flickering holographic rainbow. He whistled up his bruisers. Frank
 smacked the first one into a wall with his new [[canoe-paddle]] and broke its neck. The
 crawlers argued tactics in their private chat.
 
 Fergal took cover behind his desk and threw Rainbow Repossession — a kitsch spray of sparkles.
-The first one missed. Frank's Magic Missile hit the library wall behind him. It turned out to
-be shelved with pots of gold, which came down in a shower. Darcy reached for shells and found
-one pocket empty. The second Rainbow Repossession caught them both. Betsy and Frank's paddle
+Darcy ducked the first one. Frank's Magic Missile went wide of Fergal and hit the library wall behind him. It turned out to
+be shelved with pots of gold, which came down in a shower. Darcy's shot went wide, and when he reached for shells, one pocket was empty. The second Rainbow Repossession caught them both. Betsy and Frank's paddle
 were snatched into the room. The bruisers hit hard, and Fergal laughed from behind his desk.
 *Mongrels. Coming into my house. We're not just businessmen.*
 
-They took the way out the GM offered. Frank threw four thousand gold in the air, and every
+They saw a way out. Frank threw four thousand gold in the air, and every
 leprechaun in the room went for it. Darcy dived in and came out with Betsy. The paddle was too
 close to them. On the way out, the goblins had been whipped back into line, and a few watched
 them flee with sunken eyes.
