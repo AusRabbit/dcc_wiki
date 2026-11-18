@@ -15,7 +15,7 @@ flickering holographic rainbow, sits the pot: every coin anyone on this floor ev
 
 He runs the [[leprechaun-quarter]] from a two-storey mansion in the middle of his fields,
 from an office strewn with gold. Its library shelves are stacked with pots of gold rather
-than books. *We're not just businessmen.*
+than books. *We're honest businessmen.*
 
 ## How he fights
 

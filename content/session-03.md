@@ -91,7 +91,7 @@ rested an hour to heal.
 ## The Leprechaun Quarter
 
 The [[leprechaun-quarter]] is a house of disrepute: a drug trade, goblins enslaved in the
-fields, and chain gangs marched along corridors that cross and climb over each other. Darcy tried to bribe a bruiser for directions with a fistful of gold. It went very badly. Frank clubbed
+fields, and chain gangs marched along corridors that cross and climb over each other. Darcy tried to bribe a bruiser for directions with a thousand gold. It went very badly. Frank clubbed
 the bruiser from behind, and Darcy finished him with the bludger, sending his teeth flying.
 They both took a beating getting away.
 
@@ -109,7 +109,7 @@ of the stairs of a two-storey mansion.
 Frank tried to read the room and failed about as badly as a man can. The lube was still on his shoes, and he
 went down the polished staircase on his backside. The screen froze. *BOSS BATTLE.*
 
-[[fergal-goldgrip]], neighbourhood boss: a natty leprechaun in three-piece emerald
+[[fergal-goldgrip]], level 6 neighbourhood boss: a natty leprechaun in three-piece emerald
 tweed, with a ledger chained to his wrist and a pot of every coin anyone on this floor ever
 owed him at the end of a flickering holographic rainbow. He whistled up his bruisers. Frank
 smacked the first one into a wall with his new [[canoe-paddle]] and broke its neck. The
@@ -119,7 +119,7 @@ Fergal took cover behind his desk and threw Rainbow Repossession — a kitsch sp
 Darcy ducked the first one. Frank's Magic Missile went wide of Fergal and hit the library wall behind him. It turned out to
 be shelved with pots of gold, which came down in a shower. Darcy's shot went wide, and when he reached for shells, one pocket was empty. The second Rainbow Repossession caught them both. Betsy and Frank's paddle
 were snatched into the room. The bruisers hit hard, and Fergal laughed from behind his desk.
-*Mongrels. Coming into my house. We're not just businessmen.*
+*Mongrels. Coming into my house. We're honest businessmen.*
 
 They saw a way out. Frank threw four thousand gold in the air, and every
 leprechaun in the room went for it. Darcy dived in and came out with Betsy. The paddle was too
