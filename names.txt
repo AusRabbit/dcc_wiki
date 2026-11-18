@@ -3,11 +3,16 @@
 Betsy
 Biscuit Bomb
 Bone Carapace
+Bone Helm
 Borant
+Canoe Paddle
+Cascadia
 Cheryl
 Dale Prosky
 Darcy Smith
 Double Pluggers
+Fergal
+Fergal Goldgrip
 Frank
 Frank Doyle
 Goblin Hunters
@@ -28,13 +33,21 @@ Rats
 Sawn-off Shotgun
 Scroll of Fear
 Scroll of Ice Blast
+Shillelagh Bludger
+Shillelagh Bruiser
 Short Bow
+Silver Rings
 Spell Book of Magic Missile
+Spud Mortar Leprechaun
+Steel-Capped Work Boots
 The Bone Collector
 The Bone Pit
 The Borant Corporation
 The Girls in White Dresses
 The Goblin Prisoner
+The Graves
+The Leprechaun Quarter
+The Scratcher
 The Stairwell
 The Syndicate
 The Tutorial Guild

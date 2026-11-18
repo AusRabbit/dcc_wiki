@@ -35,4 +35,7 @@ there with your teeth and fingernails. Wild, risky moves earn favour, and low-po
 earn it too.
 
 - [[darcy-smith]] earned one for climbing [[the-bone-collector]] to feed it a [[biscuit-bomb]].
+- Darcy earned another in [[session-03]] for a bold move at [[the-graves]].
+
+In the same session, Mauritius was blunter: the live audience gets bored if you're constantly destroying things. Low-powered attacks, hand-to-hand fighting, improvised weapons and bare-knuckle boxing all earn favour. The shotgun is for when you'd otherwise die.
 

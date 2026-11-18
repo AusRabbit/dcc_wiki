@@ -117,6 +117,22 @@ a slot.
 Frank has 2 health per slot and 1 DR. A boomerang hit for 6 becomes 5 after his DR. That's
 two slots gone, and the last point is lost.
 
+## Weapons and skills
+
+Your **attack skill** is what you're good at, such as Club or Shotgun. A **weapon** is the
+glove you wear on that skill. A bat, a stick and a [[shillelagh-bludger]] all use Club, and
+each does its own damage and has its own tricks. Getting better at the skill makes every
+weapon that uses it hit more often. The weapon itself never levels up.
+
+To hit, you roll d20 + your characteristic modifier (Str, Dex and so on) + your skill rank.
+Having a skill doesn't give you Advantage. It adds its rank to the roll. Without the skill,
+you roll with Disadvantage.
+
+## Cover, resistance and vulnerability
+
+- **Cover** — the GM gives Advantage or Disadvantage for position. Frank evaded with Advantage from behind a headstone, and with Disadvantage when he was flanked. Attacking a boss behind his desk is at Disadvantage.
+- **Resistance** halves that type of damage. **Vulnerability** doubles it. Frank's [[helm-of-the-bone-collector|bone helm]] did both: Frank resisted piercing, and took double from every club.
+
 ## Easy to forget
 
 - **Untrained → Disadvantage.** Roll two d20s and take the lower. Trying anyway ticks the skill.
@@ -129,4 +145,5 @@ two slots gone, and the last point is lost.
 - **Minor Injury** is −2 to checks, and a second one becomes long-term. A gold standard healing potion mends one.
 - **Applying damage** — right-click your token on the battle map.
 - **[[ai-favour]]** — spend it to reroll before the GM calls the result. Not on a natural 1.
+- **Don't leave enemies on the map.** The bruiser who got away at [[the-graves]] took the bone with him.
 - **[[call-a-play]]** is a beat 4 action. 2d6, keep the highest, add it to your mate's roll — or to the damage, if they'd have hit anyway.

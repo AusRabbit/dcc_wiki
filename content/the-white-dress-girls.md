@@ -38,3 +38,11 @@ might quit.
 While the party searched [[the-sump|the bone pit]] for the right bones, the GM's hint was to
 use the goblin to work out what *goblin* bones look like. That fits two green-skinned girls.
 The party has one bone so far.
+
+## At the graves
+
+In [[session-03]], [[darcy-smith]] buried the bone in the most disturbed of the two central
+graves at [[the-graves]] — *taken before their time*. Then the leprechauns dug it back up and
+took it to [[fergal-goldgrip]]. The dappled sunlight went out, and the girls started giggling again. This time every third
+or fourth giggle was a scream. The GM called them *the twins*. The party got out before they
+showed up.

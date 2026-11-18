@@ -42,6 +42,13 @@ She also dodged the boss behind a pillar and let it charge into the stone.
 Then the fire came back up her own arms and set her torso alight. [[frank-doyle]] put her out
 with his water and gave her his healing potion. She had one health slot left.
 
+## Recovering
+
+After the fire, [[mauritius]] whisked her into a back room of the [[tutorial-guild]]. Mauritius
+came out with her wings wrapped nervously round herself. *Every year this happens. Magic not
+ready for use. Bugs in the game.* Michelle is lucky to be alive. She stayed behind in
+[[session-03]] while Mauritius looked after her.
+
 Not a player character. In the GM's words, she's played loosey-goosey, so she won't slow
 combat down.
 

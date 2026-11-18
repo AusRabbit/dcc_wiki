@@ -27,3 +27,15 @@ kissed her first.
 
 **Ammo is running low.** She found nothing to kill during the six-hour grind home. Along the
 way, [[frank-doyle]] fixed her trigger, which had been a bit too sensitive.
+
+## Patched, repossessed, recovered
+
+In [[session-03]]'s recap, [[cascadia]] patched every skill that had got past the first floor's
+cap back down, and Darcy's shotgun skill went with them. [[mauritius]] whispered that it had
+been pretty cool.
+
+Betsy still blew a bruiser apart mid-leap, and hit a spud mortar's ammo crate so hard the
+whole corner went up. Then, in [[fergal-goldgrip]]'s office, Darcy reached for shells and found
+one pocket empty. The GM was clear that this is foreshadowing: misses mean she will run out.
+Fergal's Rainbow Repossession snatched her out of Darcy's hands, and Darcy had to dive into a
+scrum of leprechauns grabbing gold to get her back.

@@ -23,6 +23,13 @@ She was a crawler once herself. When the party came back from the bone pit in
 [[session-02]], she was waiting with her wings spread wide, balanced on one leg — *my little
 bat-lings!* She had heard of [[the-bone-collector]]: a janitor mob gone crazy.
 
+In [[session-03]] she was nursing [[michelle]] through her burns, and she was rattled. *Every year
+this happens. Magic not ready for use. Bugs in the game.* She keeps notes on every daily
+recap, scratched onto slates with a fingernail, and files them haphazardly in a stack in the
+corner. She has *many cycles* left on her contract, and she won't break it to tell you where
+the stairwell is. When the party came back from the leprechauns, she had warm tea and biscuits
+waiting.
+
 ## How she works at the table
 
 Any time the GM has rules advice to give, it comes as a flashback to a conversation with
@@ -38,6 +45,9 @@ can flash back to her with questions too.
 - Don't drink the [[potion-of-skill]] early.
 - The System AI is a dick. When she was a crawler it kept score and played favourites, and if you push your luck it runs out. See [[ai-favour]].
 - Don't waste a Magic Missile on a small mob. Crowds hate overkill. They want to see you get in there with your teeth and fingernails.
+- Don't let them see how good something is, or they'll patch it out. *They did it to me.*
+- The live audience gets bored if you're constantly destroying things. Weak attacks, hand-to-hand, improvised weapons and bare-knuckle boxing earn [[ai-favour]]. Use the shotgun if you're going to die, of course.
+- If you don't find the stairwell in time, the floor collapses and flattens like a pancake.
 
 > [!warning] Spelling unconfirmed
 > At the table she's *Mauritius* (with an exotic slant), once *Maurice*, and once

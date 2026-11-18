@@ -28,6 +28,15 @@ rank up, and try ones you don't have so you've got a choice to make.
 On the dashboard, the dice button in the **Used** column rolls the advancement, and the blue
 **Keep this** button picks the skill you keep. Leave the rest.
 
+## Floor caps
+
+No skill can go above rank 5 on the first floor. Some crawlers found a way past the cap, and
+[[cascadia]] patched them back down in the [[session-03]] recap. Getting past rank 5 waits for
+later floors.
+
+Your characteristic points from levelling up also bank until the third floor. You can't spend
+them before then, but they're not lost.
+
 ## Grinding
 
 Grinding means spending hours killing the easiest mobs you can find. It's played as a

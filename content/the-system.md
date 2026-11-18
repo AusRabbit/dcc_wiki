@@ -34,6 +34,13 @@ crafting — costs hours off the floor's countdown.
 > don't talk to each other. Everything on the dashboard is linked to a rule that had to be dug
 > out and translated first.
 
+## Resting and fatigue
+
+- **An hour's rest** out of combat, somewhere the GM judges safe, heals one health slot and 5 mana. For a low-mana crawler that can be better value than a mana potion, which is worth saving for later, when there's more mana to fill.
+- **Fatigue** — a long day leaves you Fatigued: −1 on all your rolls, and it gets worse the longer you stay fatigued.
+- **A long rest** — eight hours, usually in a safe room — clears fatigue and heals the party.
+- **Time is a resource.** Every hour comes off the floor's countdown. Find the stairwell before it runs out, or the floor collapses with you on it.
+
 ## Boss battles
 
 Step into a boss's lair and the world freezes. *BOSS BATTLE* streams across your HUD, music

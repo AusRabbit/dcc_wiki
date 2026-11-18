@@ -26,6 +26,8 @@ The third was too close to run, and is now [[the-goblin-prisoner]]. See [[sessio
 
 They are working for a chief who wants the sisters put to rest.
 
+Not every goblin is free. In the [[leprechaun-quarter]], the leprechauns work goblins as slaves in their devil's lettuce fields, and march them around in chain gangs.
+
 > [!note] Searchers or Seekers
 > The GM's description says *searcher*. The transcript also heard *seeker* at the table.
 > Both forms resolve here.

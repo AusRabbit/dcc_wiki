@@ -22,4 +22,12 @@ the party found behind a broken grate.
 
 [[the-bone-collector]], a neighbourhood boss, ruled [[the-sump|the bone pit]] until [[session-02]]. After that fight the party had four days and four hours left to find the stairs.
 
+Beyond the bone pit, the floor is carved into neighbourhoods. Goblins hold one. The leprechauns
+run another — the [[leprechaun-quarter]] — under [[fergal-goldgrip]], and they work the goblins
+as slaves. Between them lies [[the-graves]], and the map shows
+one of the floor's stairwells there.
+
+If the party doesn't find the stairwell in time, the floor collapses and everything on it is
+flattened like a pancake.
+
 This is a tutorial floor: you gain skills here by trying things ([[levelling-skills]]).

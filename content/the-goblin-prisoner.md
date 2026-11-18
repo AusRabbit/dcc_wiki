@@ -3,9 +3,9 @@ title: "The Goblin Prisoner"
 group: "NPCs & Guides"
 type: npc
 conf: mid
-status: active
+status: dead
 floor: "1"
-dek: "Last searcher standing. On a rope, mostly. Nearly became a reference skeleton."
+dek: "Last searcher standing. Left tied up outside the safe room. Found with his throat slit."
 ---
 
 The one [[goblin-searchers|searcher]] left after the fight in [[session-01]]. [[darcy-smith]]
@@ -38,3 +38,12 @@ got dicey.
 
 > [!warning] No name yet
 > Nobody has asked.
+
+## Dead
+
+The party couldn't take him into the [[tutorial-guild]], so they left him tied up outside.
+When they came out at the start of [[session-03]], there was a white X on the minimap. He'd had
+his throat slit and was lying in a pool of his own blood. Nobody stayed to find out who did it.
+[[frank-doyle]] put the body in his inventory, along with everything the goblin had on him.
+
+He had told them where the graves were. The party found them anyway — see [[the-graves]].
